@@ -1,0 +1,62 @@
+TODO: make regularization configurable, use regularization builders to handle params
+TODO: clean up ensemble base classes, more general combining of sub-predictions
+TODO: several ensembles, adaboost, ect.
+DONE: Cross validation when regularizing, unit test current regularizers
+TODO: Descretization of numerical features
+DONE: Optimization package
+TODO: Parameterization optimization branching pipe (parameter search on options / hyper params)
+TODO: Objective-driven meta optionization (eg, simulated annealing or golden section search)
+TODO: better documentation
+TODO: feature selection
+DONE: model-based numerical features
+TODO: further work on decision trees
+TODO: check that ROC/AUC code is working in cases with ties.
+TODO: getters for values set by configurable classes
+TODO: remove superfluous values in constructors where possible 
+TODO: sparse KD tree
+TODO: annealing based on regularization in optimization package
+
+
+DONE: better builders for Truncations, likelihoods, kernels, etc. 
+DONE: configurable builders for optimizers
+TODO: fix ID3 Builder / General configurable classifier builders
+DONE: interlink configurable options with builders somehow (?)
+DONE: fix unit tests / unit tests for builders
+DONE: work on more general optimization- see optimization package. todo o-LBFGS
+DONE: fix isotonic regression
+
+TODO: switch to maven or ivy?
+TODO: code dynamic histograms / dynamic decision trees
+DONE: classifier pipes (online classifier pipes)
+DONE: pipeline to yaml / json
+DONE: unit tests
+TODO: tree split variation on conditional distributions
+DONE: testing pipelines
+TODO: search strategies
+NO: redo topic models? 
+TODO: redo multi-class classification
+DONE: redo Instanze static methods
+DONE: make Instances handle multiclass more gracefully
+DONE: functional pipelines
+TODO: compact (pre-configured) pipelines
+DONE: clean up classifiers
+DONE: Test Naive Bayes
+DONE: projection pipelines
+DONE: pipes should only grab (recursively) when next is called.
+DONE: fold filter pipe
+DONE: branching pipes
+DONE: Naive Bayes
+DONE: Multi-Regularization
+
+
+Optimization:
+
+DONE: per-variant annealing
+TODO: seperate loss consideration from annealing
+TODO: optional loss regularization on "bias terms"
+
+Common:
+DONE: change KDTree to use LinearVector
+DONE: parallelize branching pipe, make multi-threaded.
+TODO: better enumeration of options
+TODO: make Option -> Option<T> where T is the value type being stored in the option 
