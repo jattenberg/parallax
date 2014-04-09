@@ -1,4 +1,0 @@
---- !com.josh.ml.reader.ModelsBean
-models: 
-  - LogisticRegression: {d: 2, S: true, b: false,f: false}
-  - arow: {b: true,r: 20.91}
