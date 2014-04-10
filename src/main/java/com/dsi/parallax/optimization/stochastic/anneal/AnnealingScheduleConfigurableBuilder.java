@@ -4,6 +4,7 @@ import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.NestedConfiguration;
 import com.dsi.parallax.ml.util.option.ParentNestedConfigurable;
 import com.dsi.parallax.ml.util.option.ParentNestedConfigurableOptionSet;
+import com.dsi.parallax.ml.util.option.NestedConfigurableType;
 
 public class AnnealingScheduleConfigurableBuilder
 		extends
@@ -59,7 +60,11 @@ public class AnnealingScheduleConfigurableBuilder
 	@Override
 	public AnnealingScheduleBuilder configurableForType(
 			AnnealingScheduleType type) {
-		return type.getConfigurable();
+		// note: i dont know why this cast was necessary,
+		// without this, there were maven build issues
+		// that didn't exist in eclipse
+		return ((NestedConfigurableType<AnnealingScheduleBuilder, AnnealingScheduleType>) type)
+				.getConfigurable();
 	}
 
 	@Override

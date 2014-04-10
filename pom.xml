@@ -117,7 +117,6 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-			<!-- also produce a dbsources jar when pakaging -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
