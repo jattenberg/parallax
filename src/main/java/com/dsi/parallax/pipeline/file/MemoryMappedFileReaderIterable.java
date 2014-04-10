@@ -46,7 +46,7 @@ public class MemoryMappedFileReaderIterable implements Iterable<String> {
 		long fileLength = f.length();
 		int buffArraySize = 1;
 		if (fileLength > MAX_BUFFER_SIZE) {
-			buffArraySize = (int) (fileLength / (long) MAX_BUFFER_SIZE) + 1;
+			buffArraySize = (int) (fileLength / MAX_BUFFER_SIZE) + 1;
 		}
 		buffArray = new ByteBuffer[buffArraySize];
 		long start = 0;
@@ -57,7 +57,8 @@ public class MemoryMappedFileReaderIterable implements Iterable<String> {
 		iterator = new MemoryMappedFileReaderIterator();
 	}
 
-    public Iterator<String> iterator() {
+    @Override
+	public Iterator<String> iterator() {
         return iterator;
     }
     
@@ -123,17 +124,20 @@ public class MemoryMappedFileReaderIterable implements Iterable<String> {
             advance();
         }
 
-        public boolean hasNext() {
+        @Override
+		public boolean hasNext() {
             return line != null;
         }
 
-        public String next() {
+        @Override
+		public String next() {
             String retval = line;
             advance();
             return retval;
         }
 
-        public void remove() {
+        @Override
+		public void remove() {
             throw new UnsupportedOperationException(
                     "Remove not supported on BufferedReader iteration.");
         }

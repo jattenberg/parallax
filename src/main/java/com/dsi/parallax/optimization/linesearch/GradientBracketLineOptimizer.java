@@ -28,6 +28,7 @@ public class GradientBracketLineOptimizer extends AbstractLineOptimizer
 	// "line" should point in the direction we want to move the parameters to
 	// get
 	// higher value.
+	@Override
 	public double optimize(LinearVector line, double initialStep) {
 
 		assert (initialStep > 0);

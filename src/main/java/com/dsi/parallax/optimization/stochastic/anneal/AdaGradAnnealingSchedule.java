@@ -29,6 +29,7 @@ public class AdaGradAnnealingSchedule extends AnnealingSchedule implements
 	 *            the grads
 	 * @return the double
 	 */
+	@Override
 	public double learningRate(int epoch, int dimension) {
 		if (gradStorage == null) {
 			return initialLearningRate;
@@ -38,6 +39,7 @@ public class AdaGradAnnealingSchedule extends AnnealingSchedule implements
 		}
 	}
 
+	@Override
 	public void update(Gradient grad) {
 		if (gradStorage == null)
 			gradStorage = new double[grad.size()];

@@ -44,6 +44,7 @@ public class StochasticBFGSBuilder extends
 		return thisOptimizer;
 	}
 
+	@Override
 	public StochasticBFGS build() {
 		return new StochasticBFGS(dimension, bias,
 				annealingScheduleConfigurableBuilder.build(),

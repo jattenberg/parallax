@@ -126,7 +126,7 @@ public class PriorCorrectSmoother extends
 				double tmp = smooth(model.predict(x).getValue());
 				tot += discrete ? (tmp > 0.5 ? 1 : 0) : tmp;
 			}
-			baserate = (tot + EPSILON) / ((double) pool.size() + 2 * EPSILON);
+			baserate = (tot + EPSILON) / (pool.size() + 2 * EPSILON);
 		} while (EM && Math.abs(baserate - brold) > EPSILON);
 		LOGGER.info("baserate: " + baserate + ", training rate: " + oldrate
 				+ " actual: " + (double) pool.getNumPos()
@@ -145,7 +145,7 @@ public class PriorCorrectSmoother extends
 			for (Instance<BinaryClassificationTarget> x : training)
 				oldrate += smoother.smooth(x.getLabel().getValue());
 			oldrate = (oldrate + EPSILON)
-					/ ((double) training.size() + 2 * EPSILON);
+					/ (training.size() + 2 * EPSILON);
 		}
 	}
 

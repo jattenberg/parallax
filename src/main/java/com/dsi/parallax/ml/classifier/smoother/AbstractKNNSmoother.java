@@ -59,7 +59,7 @@ public abstract class AbstractKNNSmoother<R extends AbstractKNNSmoother<R>>
 
 	protected List<Entry<Double>> findNeighbors(double prediction) {
 		return tree.nearestNeighbor(pointToVector(prediction),
-				(int) Math.min(k, tree.size()), false);
+				Math.min(k, tree.size()), false);
 	}
 
 	public abstract R getSmoother();

@@ -30,6 +30,7 @@ public class InhomogeneousPolynomialKernel implements Kernel {
 	 * com.parallax.ml.mercerkernels.Kernel#InnerProduct(com.parallax.ml.instance
 	 * .Instanze, com.parallax.ml.instance.Instanze)
 	 */
+	@Override
 	public double InnerProduct(Instance<?> x, Instance<?> y) {
 		double ip = 0.0;
 		for (int i = 0; i < x.getDimension(); i++) {

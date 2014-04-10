@@ -91,6 +91,7 @@ class multiCurve {
 		}
 	}
 
+	@Override
 	public String toString() {
 		StringBuffer buff = new StringBuffer();
 		for (int i = 0; i < this.num_bins; i++) {

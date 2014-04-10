@@ -29,7 +29,7 @@ public class TestStringSequenceToNumericDictionaryPipe {
         assertTrue(it.hasNext());
         Context<LinearVector> next = it.next();
         assertTrue(next.getData() instanceof LinearVector);
-        LinearVector vect = (LinearVector) next.getData();
+        LinearVector vect = next.getData();
         assertTrue(vect.size() == 1000000);
         int ct = 0;
         for (@SuppressWarnings("unused") int x : vect)

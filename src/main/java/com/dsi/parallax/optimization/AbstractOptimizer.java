@@ -51,14 +51,17 @@ public abstract class AbstractOptimizer implements Optimizer {
 	{
 		return grad.LPNorm(2) < gradientTolerance;
 	}
+	@Override
 	public void setTolerance(double tolerance)
 	{
 		this.tolerance = tolerance;
 	}
+	@Override
 	public void setGradTolerance(double gradTolerance)
 	{
 		this.gradientTolerance = gradTolerance;
 	}
+	@Override
 	public void setValueConvergenceType(ValueConvergenceType type)
 	{
 		this.convergence = type;

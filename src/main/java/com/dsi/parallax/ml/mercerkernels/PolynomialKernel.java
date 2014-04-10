@@ -26,6 +26,7 @@ public class PolynomialKernel implements Kernel {
 	/* (non-Javadoc)
 	 * @see com.parallax.ml.mercerkernels.Kernel#InnerProduct(com.parallax.ml.instance.Instanze, com.parallax.ml.instance.Instanze)
 	 */
+	@Override
 	public double InnerProduct(Instance<?> x, Instance<?> y) {
 		double ip = 0.0;
 		for (int x_i : y) {

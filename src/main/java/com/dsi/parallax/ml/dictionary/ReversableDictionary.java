@@ -14,6 +14,7 @@ import com.dsi.parallax.ml.vector.LinearVector;
  */
 public interface ReversableDictionary extends Dictionary {
 	public int getCurrentSize();
+	@Override
 	LinearVector vectorFromText(Collection<String> text);
 	public int getOrAddFeature(String feature);
 	public String getFeatureFromIndex(int index);

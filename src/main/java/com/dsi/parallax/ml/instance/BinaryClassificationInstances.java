@@ -227,8 +227,8 @@ public class BinaryClassificationInstances extends
 		double[] dist = new double[2];
 		double tot = (double) this.getNumPos() + (double) this.getNumNeg();
 		if (tot != 0.0) {
-			dist[0] = (double) negN / tot;
-			dist[1] = (double) posN / tot;
+			dist[0] = negN / tot;
+			dist[1] = posN / tot;
 		}
 		return dist;
 	}
@@ -245,8 +245,8 @@ public class BinaryClassificationInstances extends
 		double[] dist = new double[2];
 		double tot = negN + posN + 2.0;
 		if (tot != 0.0) {
-			dist[0] = ((double) negN + 1.0) / tot;
-			dist[1] = ((double) posN + 1.0) / tot;
+			dist[0] = (negN + 1.0) / tot;
+			dist[1] = (posN + 1.0) / tot;
 		}
 		return dist;
 	}

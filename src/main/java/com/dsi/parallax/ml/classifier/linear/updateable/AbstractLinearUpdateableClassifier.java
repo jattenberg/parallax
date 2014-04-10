@@ -406,7 +406,7 @@ public abstract class AbstractLinearUpdateableClassifier<C extends AbstractLinea
 		}
 
 		loss *= (regularizationWeight * (lastAccessed[dim] - epoch))
-				/ (double) dimension;
+				/ dimension;
 		lastAccessed[dim] = epoch;
 		return loss;
 	}

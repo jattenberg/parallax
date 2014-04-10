@@ -38,10 +38,12 @@ public class ConjugateGradient extends AbstractOptimizer {
 		this(function, 0.01);
 	}
 
+	@Override
 	public Optimizable getOptimizable() {
 		return this.optimizable;
 	}
 
+	@Override
 	public boolean isConverged() {
 		return converged;
 	}

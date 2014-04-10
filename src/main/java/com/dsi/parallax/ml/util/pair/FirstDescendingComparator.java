@@ -19,9 +19,10 @@ public class FirstDescendingComparator implements Comparator<PrimitivePair>
      * @param ex2 PrimitivePair
      * @return int
      */
+	@Override
 	public int compare(PrimitivePair ex1, PrimitivePair ex2) {
-		PrimitivePair l1 = (PrimitivePair) ex1;
-		PrimitivePair l2 = (PrimitivePair) ex2;
+		PrimitivePair l1 = ex1;
+		PrimitivePair l2 = ex2;
 
 		if (l1.first > l2.first)
 			return 1;

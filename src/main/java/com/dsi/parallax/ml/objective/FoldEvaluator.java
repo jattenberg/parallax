@@ -51,7 +51,7 @@ public class FoldEvaluator {
 	 */
 	public FoldEvaluator(int folds) {
 		this.folds = folds;
-		executor = Executors.newFixedThreadPool((int)Math.min(DEFAULT_FOLDS, folds));
+		executor = Executors.newFixedThreadPool(Math.min(DEFAULT_FOLDS, folds));
 	}
 
 	/**

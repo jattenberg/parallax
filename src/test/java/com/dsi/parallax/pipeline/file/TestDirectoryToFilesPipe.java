@@ -41,7 +41,7 @@ public class TestDirectoryToFilesPipe {
 			Iterator<Context<File>> it2 = pipe.processIterator(Iterators.forArray(fileContext));
             Set<String> pipeContains = Sets.newHashSet();
             while (it2.hasNext()) {
-                File f = (File) it2.next().getData();
+                File f = it2.next().getData();
                 pipeContains.add(f.toString());
             }
             assertTrue(contains.containsAll(pipeContains));
@@ -73,7 +73,7 @@ public class TestDirectoryToFilesPipe {
         DirectoryToFilesPipe pipe = new DirectoryToFilesPipe();
         Iterator<Context<File>> it2 = pipe.processIterator(contexts.iterator());
         while (it2.hasNext()) {
-            File f = (File) it2.next().getData();
+            File f = it2.next().getData();
             pipeContains.add(f.toString());
         }
         assertTrue(contains.containsAll(pipeContains));

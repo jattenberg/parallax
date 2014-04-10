@@ -33,7 +33,7 @@ public class TestStringSequenceToSkipGramsPipe {
             assertTrue(it.hasNext());
             List<String> vec = it.next().getData();
             assertTrue(!it.hasNext());
-            assertEquals(vec.size(),(int)Math.max(0, tokens2.size()-(i-1)));
+            assertEquals(vec.size(),Math.max(0, tokens2.size()-(i-1)));
         }
         
         for(int i = 1; i < 105; i++) {
@@ -45,7 +45,7 @@ public class TestStringSequenceToSkipGramsPipe {
             assertTrue(it.hasNext());
             List<String> vec = it.next().getData();
             assertTrue(!it.hasNext());
-            assertEquals(vec.size(),(int)Math.max(0, longTokens.size()-(i-1)));
+            assertEquals(vec.size(),Math.max(0, longTokens.size()-(i-1)));
         }
     }
 

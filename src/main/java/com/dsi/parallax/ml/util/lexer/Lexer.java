@@ -20,10 +20,13 @@ public interface Lexer extends Iterator<String> {
 
     public String getTokenString ();
 
-    public boolean hasNext ();
+    @Override
+	public boolean hasNext ();
 
     // Returns token text as a String
-    public String next ();
+    @Override
+	public String next ();
 
-    public void remove ();
+    @Override
+	public void remove ();
 }

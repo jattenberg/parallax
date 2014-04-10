@@ -152,6 +152,7 @@ public class OptimizationTestUtils {
 			return computeLoss(parameters);
 		}
 
+		@Override
 		public double computeLoss(LinearVector params) {
 			return Math.sqrt(Math.pow(params.getValue(0) - minimum[0], 2)
 					+ Math.pow(params.getValue(1) - minimum[1], 2));
@@ -226,6 +227,7 @@ public class OptimizationTestUtils {
 			return computeLoss(parameters);
 		}
 
+		@Override
 		public double computeLoss(LinearVector params) {
 			return Math.sqrt(Math.pow(params.getValue(0) - minimum2[0], 2));
 		}

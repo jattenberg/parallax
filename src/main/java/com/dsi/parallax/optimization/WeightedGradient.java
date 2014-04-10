@@ -58,111 +58,136 @@ public class WeightedGradient implements Iterable<Integer>, LinearVector {
 		return gradientVector.iterator();
 	}
 
+	@Override
 	public double getValue(int index) {
 		return gradientVector.getValue(index);
 	}
 
+	@Override
 	public void updateValue(int index, double value) {
 		gradientVector.updateValue(index, value);
 	}
 
+	@Override
 	public void resetValue(int index, double value) {
 		gradientVector.resetValue(index, value);
 	}
 
+	@Override
 	public void delete(int index) {
 		gradientVector.delete(index);
 	}
 
+	@Override
 	public Set<Integer> getFeatureIndicies() {
 		return gradientVector.getFeatureIndicies();
 	}
 
+	@Override
 	public int size() {
 		return gradientVector.size();
 	}
 
+	@Override
 	public void initW(double param) {
 		gradientVector.initW(param);
 	}
 
+	@Override
 	public double[] getW() {
 		return gradientVector.getW();
 	}
 
+	@Override
 	public double[] getWbias() {
 		return gradientVector.getWbias();
 	}
 
+	@Override
 	public double[] getWbias(int biasTerms) {
 		return gradientVector.getWbias(biasTerms);
 	}
 
+	@Override
 	public void setW(double[] W) {
 		gradientVector.setW(W);
 	}
 
+	@Override
 	public void setW(List<Double> W) {
 		gradientVector.setW(W);
 	}
 
+	@Override
 	public double LPNorm(double p) {
 		return gradientVector.LPNorm(p);
 	}
 
+	@Override
 	public double L0Norm() {
 		return gradientVector.L0Norm();
 	}
 
+	@Override
 	public double L1Norm() {
 		return gradientVector.L1Norm();
 	}
 
+	@Override
 	public double L2Norm() {
 		return gradientVector.L2Norm();
 	}
 
+	@Override
 	public double LInfinityNorm() {
 		return gradientVector.LInfinityNorm();
 	}
 
+	@Override
 	public WeightedGradient timesEquals(double value) {
 		gradientVector.timesEquals(value);
 		return this;
 	}
 
+	@Override
 	public WeightedGradient plusEquals(double value) {
 		gradientVector.plusEquals(value);
 		return this;
 	}
 
+	@Override
 	public WeightedGradient minusEquals(double value) {
 		gradientVector.minusEquals(value);
 		return this;
 	}
 
+	@Override
 	public WeightedGradient plusEquals(LinearVector vect) {
 		gradientVector.plusEquals(vect);
 		return this;
 	}
 
+	@Override
 	public WeightedGradient minusEquals(LinearVector vect) {
 		gradientVector.minusEquals(vect);
 		return this;
 	}
 
+	@Override
 	public WeightedGradient plusEqualsVectorTimes(LinearVector vect,
 			double factor) {
 		gradientVector.plusEqualsVectorTimes(vect, factor);
 		return this;
 	}
 
+	@Override
 	public WeightedGradient minusEqualsVectorTimes(LinearVector vect,
 			double factor) {
 		gradientVector.minusEqualsVectorTimes(vect, factor);
 		return this;
 	}
 
+	@Override
 	public void absNormalize() {
 		gradientVector.absNormalize();
 	}

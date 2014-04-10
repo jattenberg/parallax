@@ -175,7 +175,7 @@ public class ContingencyTable {
         
         if ((min == 0) || MLUtils.floatingPointEquals(total, 0))
             return 0;
-        return Math.sqrt(chiVal(false) / (total * (double) min));
+        return Math.sqrt(chiVal(false) / (total * min));
     }
 
 

@@ -34,11 +34,13 @@ public class MultiClassTarget extends MultiLabelTarget {
 		super(numClasses, values);
 	}
 	
+	@Override
 	protected void copyTargetValues(List<Double> candidateValues) {
 		checkArgument(MLUtils.floatingPointEquals(1.0,MLUtils.sum(candidateValues)));
 		super.copyTargetValues(candidateValues);
 	}
 
+	@Override
 	protected void copyTargetValues(double[] candidateValues) {
 		checkArgument(MLUtils.floatingPointEquals(1.0,MLUtils.sum(candidateValues)));
 		super.copyTargetValues(candidateValues);

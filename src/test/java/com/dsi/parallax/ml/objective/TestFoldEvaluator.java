@@ -51,8 +51,8 @@ public class TestFoldEvaluator {
 		double mt = feval.evaluate(instances, new AUCObjective(), builder);
 		double mtACCY = feval.evaluate(instances, new AccuracyObjective(),
 				builder);
-		assertEquals(mean / (double) folds, mt, 0.01);
-		assertEquals(meanACCY / (double) folds, mtACCY, 0.01);
+		assertEquals(mean / folds, mt, 0.01);
+		assertEquals(meanACCY / folds, mtACCY, 0.01);
 
 	}
 

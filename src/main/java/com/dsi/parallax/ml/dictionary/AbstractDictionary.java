@@ -67,7 +67,8 @@ public abstract class AbstractDictionary implements Dictionary {
      * @param namespacedText namespace text
      * @return LinearVector
      */
-    public LinearVector vectorFromNamespacedText(
+    @Override
+	public LinearVector vectorFromNamespacedText(
             Map<String, Collection<String>> namespacedText) {
         return vectorFromNamespacedText(namespacedText, true);
     }

@@ -50,6 +50,7 @@ public class RandomUtils extends Random {
 	}
 
 	/** Return a random boolean, equally likely to be true or false. */
+	@Override
 	public synchronized boolean nextBoolean() {
 		return (next(32) & 1 << 15) != 0;
 	}
@@ -110,6 +111,7 @@ public class RandomUtils extends Random {
 	 * Return a random double drawn from a Gaussian distribution with mean 0 and
 	 * variance 1.
 	 */
+	@Override
 	public synchronized double nextGaussian() {
 		if (!haveNextGaussian) {
 			double v1 = nextUniform(), v2 = nextUniform();
@@ -273,7 +275,7 @@ public class RandomUtils extends Random {
 	 * df and variance 2*df.
 	 */
 	public synchronized double nextChiSq(int df) {
-		return nextGamma(0.5 * (double) df, 2, 0);
+		return nextGamma(0.5 * df, 2, 0);
 	}
 
 	/**
@@ -281,7 +283,7 @@ public class RandomUtils extends Random {
 	 * df+lambda and variance 2*df.
 	 */
 	public synchronized double nextChiSq(int df, double lambda) {
-		return nextGamma(0.5 * (double) df, 2, lambda);
+		return nextGamma(0.5 * df, 2, lambda);
 	}
 
 	/**

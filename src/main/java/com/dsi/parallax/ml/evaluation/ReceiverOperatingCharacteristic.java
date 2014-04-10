@@ -118,7 +118,7 @@ public class ReceiverOperatingCharacteristic {
 		double score = 0;
 		for (PrimitivePair ex : examples)
 			score += (ex.second - ex.first) * (ex.second - ex.first);
-		return score / (double) examples.size();
+		return score / examples.size();
 	}
 
 	/**
@@ -261,6 +261,7 @@ public class ReceiverOperatingCharacteristic {
 		/* (non-Javadoc)
 		 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
 		 */
+		@Override
 		public int compare(PrimitivePair l1, PrimitivePair l2) {
 
 			if (l1.second > l2.second)

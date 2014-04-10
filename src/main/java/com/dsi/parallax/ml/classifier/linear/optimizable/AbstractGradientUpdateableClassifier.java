@@ -191,6 +191,7 @@ public abstract class AbstractGradientUpdateableClassifier<C extends AbstractGra
 	 * @return the model itself, used for method chaining
 	 * @see {@link #train(Instances)}
 	 */
+	@Override
 	public C setPasses(int passes) {
 		checkArgument(passes > 0, "passes must be greater than 0. input: %d",
 				passes);
@@ -204,6 +205,7 @@ public abstract class AbstractGradientUpdateableClassifier<C extends AbstractGra
 	 * 
 	 * @return the passes
 	 */
+	@Override
 	public int getPasses() {
 		return passes;
 	}
@@ -310,6 +312,7 @@ public abstract class AbstractGradientUpdateableClassifier<C extends AbstractGra
 		this.parameters = params;
 	}
 
+	@Override
 	public <O extends StochasticGradientOptimizationBuilder<O>> C setOptimizationBuilder(
 			O optimizer) {
 		checkArgument(
@@ -323,6 +326,7 @@ public abstract class AbstractGradientUpdateableClassifier<C extends AbstractGra
 		return model;
 	}
 
+	@Override
 	public StochasticGradientOptimizationBuilder<?> getOptimizationBuilder() {
 		return this.builder;
 	}

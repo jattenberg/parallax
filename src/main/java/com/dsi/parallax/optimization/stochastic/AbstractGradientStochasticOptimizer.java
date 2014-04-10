@@ -85,6 +85,7 @@ public abstract class AbstractGradientStochasticOptimizer implements
 		return function;
 	}
 
+	@Override
 	public Optimizable cleanup(Optimizable function) {
 		LinearVector regularizationGradient = LinearVectorFactory
 				.getVector(dimension);
@@ -138,7 +139,7 @@ public abstract class AbstractGradientStochasticOptimizer implements
 		}
 
 		loss *= (regularizationWeight * (epoch - lastAccessed[dim]))
-				/ (double) dimension;
+				/ dimension;
 		lastAccessed[dim] = epoch;
 
 		return loss;

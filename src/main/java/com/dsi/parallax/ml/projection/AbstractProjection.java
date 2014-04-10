@@ -64,6 +64,7 @@ public abstract class AbstractProjection implements Projection {
 	 * 
 	 * @see com.parallax.ml.projection.Projection#getInputDimension()
 	 */
+	@Override
 	public int getInputDimension() {
 		return inDim;
 	}
@@ -73,6 +74,7 @@ public abstract class AbstractProjection implements Projection {
 	 * 
 	 * @see com.parallax.ml.projection.Projection#getOutputDimension()
 	 */
+	@Override
 	public int getOutputDimension() {
 		return outDim;
 	}

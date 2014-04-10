@@ -17,6 +17,7 @@ public class LinearKernel implements Kernel {
 	 * com.parallax.ml.mercerkernels.Kernel#InnerProduct(com.parallax.ml.instance
 	 * .Instanze, com.parallax.ml.instance.Instanze)
 	 */
+	@Override
 	public double InnerProduct(Instance<?> x, Instance<?> y) {
 		return x.dot(y) + 1d;
 	}

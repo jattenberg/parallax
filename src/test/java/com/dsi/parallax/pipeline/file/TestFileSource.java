@@ -24,7 +24,7 @@ public class TestFileSource {
             FileSource source = new FileSource(file);
             Set<String> contains = Sets.newHashSet();
             while(source.provideData().hasNext()) {
-                File f = (File)source.provideData().next().getData();
+                File f = source.provideData().next().getData();
                 contains.add(f.getAbsolutePath());
             }
             assertTrue(contains.contains(file.getAbsolutePath()));
@@ -37,7 +37,7 @@ public class TestFileSource {
             Set<File> shouldHave = Sets.newHashSet(file.listFiles());
             Set<File> contains = Sets.newHashSet();
             while(source.provideData().hasNext()) {
-                File f = (File)source.provideData().next().getData();
+                File f = source.provideData().next().getData();
                 contains.add(f);
             }
             assertTrue(contains.containsAll(shouldHave));

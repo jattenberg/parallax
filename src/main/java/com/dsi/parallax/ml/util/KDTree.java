@@ -454,6 +454,7 @@ public abstract class KDTree<T> {
 			this.weights = weights;
 		}
 
+		@Override
 		protected double getAxisWeightHint(int i) {
 			return weights[i];
 		}
@@ -516,6 +517,7 @@ public abstract class KDTree<T> {
 			return d;
 		}
 
+		@Override
 		protected double pointRegionDist(LinearVector point, LinearVector min,
 				LinearVector max) {
 			double d = 0;
@@ -553,6 +555,7 @@ public abstract class KDTree<T> {
 			this.weights = weights;
 		}
 
+		@Override
 		protected double getAxisWeightHint(int i) {
 			return weights[i];
 		}
@@ -571,6 +574,7 @@ public abstract class KDTree<T> {
 			return d;
 		}
 
+		@Override
 		protected double pointRegionDist(LinearVector point, LinearVector min,
 				LinearVector max) {
 			double d = 0;
@@ -600,6 +604,7 @@ public abstract class KDTree<T> {
 			super(dimensions, sizeLimit);
 		}
 
+		@Override
 		protected double pointDist(LinearVector p1, LinearVector p2) {
 			double d = 0;
 
@@ -613,6 +618,7 @@ public abstract class KDTree<T> {
 			return d;
 		}
 
+		@Override
 		protected double pointRegionDist(LinearVector point, LinearVector min,
 				LinearVector max) {
 			double d = 0;

@@ -79,7 +79,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null == inst.getLabel());
 
 		context = new Context<LinearVector>(vec);
@@ -87,7 +87,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null != inst.getLabel());
 
 		context = new Context<LinearVector>(vec);
@@ -95,7 +95,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null != inst.getLabel());
 
 		pipe = new BinaryInstancesFromVectorPipe(
@@ -106,7 +106,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null == inst.getLabel());
 
 		context = new Context<LinearVector>(vec);
@@ -114,7 +114,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null != inst.getLabel());
 		assertEquals(inst.getLabel().getValue(), 1, 0.0000001);
 
@@ -123,7 +123,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 	}
 
 	/**
@@ -146,7 +146,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		Context<BinaryClassificationInstance> c2;
 		c2 = it.next();
 		BinaryClassificationInstance inst;
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		for (int x : vec) {
 			assertEquals(vec.getValue(x), inst.getFeatureValue(x), 0.00001);
 		}
@@ -156,7 +156,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null == inst.getLabel());
 
 		context = new Context<LinearVector>(vec);
@@ -164,7 +164,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null != inst.getLabel());
 		assertEquals(inst.getLabel().getValue(), 1, 0.0000001);
 
@@ -173,7 +173,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null != inst.getLabel());
 		assertEquals(inst.getLabel().getValue(), 0, 0.0000001);
 
@@ -182,7 +182,7 @@ public class TestBinaryInstancesFromVectorPipe {
 		it = pipe
 				.processIterator(Collections.singletonList(context).iterator());
 		c2 = it.next();
-		inst = (BinaryClassificationInstance) c2.getData();
+		inst = c2.getData();
 		assertTrue(null == inst.getLabel());
 
 	}

@@ -41,7 +41,7 @@ public class BinaryTargetGiniSplitCriterion implements
 		}
 
 		double impurity = MLUtils.giniImpurity(priors);
-		double posProb = xCounts[1] / (double) (xCounts[1] + xCounts[0]);
+		double posProb = xCounts[1] / (xCounts[1] + xCounts[0]);
 
 		impurity -= posProb * MLUtils.giniImpurity(posteriors[1]);
 		impurity -= (1. - posProb) * MLUtils.giniImpurity(posteriors[0]);

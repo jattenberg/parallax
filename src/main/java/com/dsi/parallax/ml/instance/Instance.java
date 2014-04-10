@@ -349,6 +349,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see java.lang.Object#toString()
 	 */
+	@Override
 	public String toString() {
 		StringBuffer buff = new StringBuffer(label + "- ");
 
@@ -479,6 +480,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#size()
 	 */
+	@Override
 	public int size() {
 		return vector.size();
 	}
@@ -551,6 +553,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#getValue(int)
 	 */
+	@Override
 	public double getValue(int index) {
 		return vector.getValue(index);
 	}
@@ -563,6 +566,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * @param value
 	 *            the value
 	 */
+	@Override
 	public void updateValue(int index, double value) {
 		vector.updateValue(index, value);
 	}
@@ -572,6 +576,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#resetValue(int, double)
 	 */
+	@Override
 	public void resetValue(int index, double value) {
 		vector.resetValue(index, value);
 	}
@@ -581,6 +586,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#delete(int)
 	 */
+	@Override
 	public void delete(int index) {
 		vector.delete(index);
 	}
@@ -590,6 +596,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#getFeatureIndicies()
 	 */
+	@Override
 	public Set<Integer> getFeatureIndicies() {
 		return vector.getFeatureIndicies();
 	}
@@ -599,6 +606,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#initW(double)
 	 */
+	@Override
 	public void initW(double param) {
 		vector.initW(param);
 	}
@@ -608,6 +616,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#getW()
 	 */
+	@Override
 	public double[] getW() {
 		return vector.getW();
 	}
@@ -617,6 +626,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#setW(double[])
 	 */
+	@Override
 	public void setW(double[] W) {
 		vector.setW(W);
 	}
@@ -626,6 +636,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#setW(java.util.List)
 	 */
+	@Override
 	public void setW(List<Double> W) {
 		vector.setW(W);
 	}
@@ -635,6 +646,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#LPNorm(double)
 	 */
+	@Override
 	public double LPNorm(double p) {
 		return vector.LPNorm(p);
 	}
@@ -644,6 +656,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#L0Norm()
 	 */
+	@Override
 	public double L0Norm() {
 		return vector.L0Norm();
 	}
@@ -653,6 +666,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#L1Norm()
 	 */
+	@Override
 	public double L1Norm() {
 		return vector.L1Norm();
 	}
@@ -662,6 +676,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#L2Norm()
 	 */
+	@Override
 	public double L2Norm() {
 		return vector.L2Norm();
 	}
@@ -671,6 +686,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#LInfinityNorm()
 	 */
+	@Override
 	public double LInfinityNorm() {
 		return vector.LInfinityNorm();
 	}
@@ -680,6 +696,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#timesEquals(double)
 	 */
+	@Override
 	public LinearVector timesEquals(double value) {
 		vector.timesEquals(value);
 		return this;
@@ -690,6 +707,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#plusEquals(double)
 	 */
+	@Override
 	public Instance<T> plusEquals(double value) {
 		vector.plusEquals(value);
 		return this;
@@ -700,6 +718,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * 
 	 * @see com.parallax.ml.util.vector.LinearVector#minusEquals(double)
 	 */
+	@Override
 	public Instance<T> minusEquals(double value) {
 		vector.minusEquals(value);
 		return this;
@@ -712,6 +731,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * com.parallax.ml.util.vector.LinearVector#plusEquals(com.parallax.ml.util
 	 * .vector.LinearVector)
 	 */
+	@Override
 	public Instance<T> plusEquals(LinearVector vect) {
 		vector.plusEquals(vect);
 		return this;
@@ -724,6 +744,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * com.parallax.ml.util.vector.LinearVector#minusEquals(com.parallax.ml.
 	 * util.vector.LinearVector)
 	 */
+	@Override
 	public Instance<T> minusEquals(LinearVector vect) {
 		vector.minusEquals(vect);
 		return this;
@@ -736,6 +757,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * com.parallax.ml.util.vector.LinearVector#plusEqualsVectorTimes(com.parallax
 	 * .ml.util.vector.LinearVector, double)
 	 */
+	@Override
 	public Instance<T> plusEqualsVectorTimes(LinearVector vect, double factor) {
 		vector.plusEqualsVectorTimes(vect, factor);
 		return this;
@@ -748,6 +770,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	 * com.parallax.ml.util.vector.LinearVector#minusEqualsVectorTimes(com.parallax
 	 * .ml.util.vector.LinearVector, double)
 	 */
+	@Override
 	public Instance<T> minusEqualsVectorTimes(LinearVector vect, double factor) {
 		vector.minusEqualsVectorTimes(vect, factor);
 		return this;
@@ -756,6 +779,7 @@ public abstract class Instance<T extends Target> implements Serializable,
 	/**
 	 * normalize by the L1 norm.
 	 */
+	@Override
 	public void absNormalize() {
 		vector.absNormalize();
 	}

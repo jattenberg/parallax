@@ -106,7 +106,7 @@ public class StochasticLBFGS extends AbstractGradientStochasticOptimizer {
 				double denominator = VectorUtils.dotProduct(y_ti, y_ti);
 				updateFactor += numerator / denominator;
 			}
-			p_t.timesEquals(updateFactor / (double) stYtCache.size());
+			p_t.timesEquals(updateFactor / stYtCache.size());
 		}
 
 		for (LinearVector s_ti : stList) {

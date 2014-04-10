@@ -97,12 +97,12 @@ public class BinningSmoother extends AbstractSmoother<BinningSmoother> {
 		List<PrimitivePair> ordered = Lists.newArrayList(input);
 		Collections.sort(ordered, new FirstDescendingComparator());
 
-		int usedBins = (int) Math.min(bins, ordered.size());
+		int usedBins = Math.min(bins, ordered.size());
 		int binSize = ordered.size() / usedBins;
 
 		for (int bin = 0; bin < usedBins; bin++) {
 			int start = bin * binSize;
-			int end = (int) Math.min(start + binSize, ordered.size());
+			int end = Math.min(start + binSize, ordered.size());
 
 			double max = ordered.get(end - 1).first;
 			double mean = listMean(ordered.subList(start, end));

@@ -35,6 +35,7 @@ public class GaussianRBFKernel implements Kernel {
 	 * com.parallax.ml.mercerkernels.Kernel#InnerProduct(com.parallax.ml.instance
 	 * .Instanze, com.parallax.ml.instance.Instanze)
 	 */
+	@Override
 	public double InnerProduct(Instance<?> x, Instance<?> y) {
 		double ip = Math.pow(MLUtils.euclidianDistance(x, y), 2);
 		ip *= -sigma;

@@ -82,6 +82,7 @@ public abstract class GradientUpdateableClassifierConfigurableBuilder<C extends 
 	 * @see
 	 * com.parallax.ml.classifier.UpdateableClassifierBuilder#setPasses(int)
 	 */
+	@Override
 	public B setPasses(int passes) {
 		checkArgument(passes > 0, "passes must be positive, given: %s", passes);
 		this.passes = passes;

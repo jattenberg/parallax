@@ -142,7 +142,7 @@ public class BinaryClassificationInstance extends
 	public String toSVNLightFormat() {
 		StringBuilder buff = new StringBuilder(
 				""
-						+ (int) (MLUtils.floatingPointEquals(getLabel()
+						+ (MLUtils.floatingPointEquals(getLabel()
 								.getValue(), 0) ? -1 : 1));
 		List<PrimitivePair> featureValues = new ArrayList<PrimitivePair>();
 		for (int x_i : this) {
@@ -150,6 +150,7 @@ public class BinaryClassificationInstance extends
 					ValueScaling.UNSCALED, x_i)));
 		}
 		Collections.sort(featureValues, new Comparator<PrimitivePair>() {
+			@Override
 			public int compare(PrimitivePair a, PrimitivePair b) {
 				return a.getFirst() > b.getFirst() ? 1 : b.getFirst() > a
 						.getFirst() ? -1 : 0;

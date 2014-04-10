@@ -72,7 +72,8 @@ public abstract class AbstractFeatureSelection extends AbstractProjection implem
     /* (non-Javadoc)
      * @see com.parallax.ml.projection.featureselection.FeatureSelection#getKeptFeatures()
      */
-    public int[] getKeptFeatures() {
+    @Override
+	public int[] getKeptFeatures() {
     	return Arrays.copyOf(selectedFeatures, selectedFeatures.length);
     }
 }

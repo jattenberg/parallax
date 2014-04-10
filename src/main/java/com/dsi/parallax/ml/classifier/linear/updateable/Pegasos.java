@@ -102,7 +102,7 @@ public class Pegasos extends AbstractLinearUpdateableClassifier<Pegasos> {
 					.plusVectorTimes(vec, (1d - eta * regularizationWeight));
 
 			for (Instance<BinaryClassificationTarget> x : aplus) {
-				double slab = (eta / (double) aplus.size())
+				double slab = (eta / aplus.size())
 						* MLUtils.probToSVMInterval(x.getLabel().getValue()) * x.getWeight();
 				for (int x_i : x) {
 					double update = slab * x.getFeatureValue(x_i);

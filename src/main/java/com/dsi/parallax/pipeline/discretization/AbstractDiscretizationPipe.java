@@ -99,6 +99,7 @@ public abstract class AbstractDiscretizationPipe extends
 	/* (non-Javadoc)
 	 * @see com.parallax.pipeline.AbstractAccumulatingPipe#operate(com.parallax.pipeline.Context)
 	 */
+	@Override
 	protected Context<LinearVector> operate(Context<LinearVector> context) {
 		LinearVector in = context.getData();
 

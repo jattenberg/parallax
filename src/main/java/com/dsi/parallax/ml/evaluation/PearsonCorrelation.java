@@ -58,8 +58,8 @@ public class PearsonCorrelation {
 			mu1 += p.getFirst();
 			mu2 += p.getSecond();
 		}
-		mu1 /= (double) values.size();
-		mu2 /= (double) values.size();
+		mu1 /= values.size();
+		mu2 /= values.size();
 
 		return new PrimitivePair(mu1, mu2);
 	}

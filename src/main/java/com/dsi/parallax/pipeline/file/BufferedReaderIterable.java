@@ -43,7 +43,8 @@ public class BufferedReaderIterable implements Iterable<String> {
         this(new BufferedReader(new FileReader(f)));
     }
 
-    public Iterator<String> iterator() {
+    @Override
+	public Iterator<String> iterator() {
         return iterator;
     }
 
@@ -56,17 +57,20 @@ public class BufferedReaderIterable implements Iterable<String> {
             advance();
         }
 
-        public boolean hasNext() {
+        @Override
+		public boolean hasNext() {
             return line != null;
         }
 
-        public String next() {
+        @Override
+		public String next() {
             String retval = line;
             advance();
             return retval;
         }
 
-        public void remove() {
+        @Override
+		public void remove() {
             throw new UnsupportedOperationException(
                     "Remove not supported on BufferedReader iteration.");
         }

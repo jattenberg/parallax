@@ -149,7 +149,7 @@ public abstract class AbstractClassifier<C extends AbstractClassifier<C>>
 			trainSmoother(instances);
 		} else {
 			Collection<PrimitivePair> pairs = Lists.newLinkedList();
-			int folds = (int) Math.min(instances.size(),
+			int folds = Math.min(instances.size(),
 					crossValidateSmootherTraining);
 
 			for (int fold = 0; fold < folds; fold++) {

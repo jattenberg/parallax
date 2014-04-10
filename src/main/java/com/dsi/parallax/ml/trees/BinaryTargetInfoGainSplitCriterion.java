@@ -39,7 +39,7 @@ public class BinaryTargetInfoGainSplitCriterion implements
 			xCounts[threshSide] += attributeValues.get(avl);
 		}
 		double entropy = MLUtils.entropy(priors);
-		double posProb = xCounts[1] / (double) (xCounts[1] + xCounts[0]);
+		double posProb = xCounts[1] / (xCounts[1] + xCounts[0]);
 
 		entropy -= posProb * MLUtils.entropy(posteriors[1]);
 		entropy -= (1. - posProb) * MLUtils.entropy(posteriors[0]);

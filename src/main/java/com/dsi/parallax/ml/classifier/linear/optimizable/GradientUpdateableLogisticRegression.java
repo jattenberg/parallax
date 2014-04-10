@@ -69,7 +69,7 @@ public class GradientUpdateableLogisticRegression
 			double py = MLUtils.probToSVMInterval(prediction) * label;
 			loss += Math.log(1 + Math.exp(py));
 		}
-		return instances.size() > 0 ? loss / (double) instances.size() : 0;
+		return instances.size() > 0 ? loss / instances.size() : 0;
 	}
 
 	@Override

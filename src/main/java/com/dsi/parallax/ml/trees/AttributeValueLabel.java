@@ -73,7 +73,7 @@ public class AttributeValueLabel<T extends Target> implements
 			AttributeValueLabel a = (AttributeValueLabel) o;
 			if (label.getClass().isInstance(a.label)) {
 				@SuppressWarnings("unchecked")
-				AttributeValueLabel<T> b = (AttributeValueLabel<T>) a;
+				AttributeValueLabel<T> b = a;
 				return new EqualsBuilder().append(value, b.value)
 						.append(label, b.label).isEquals();
 			} else {

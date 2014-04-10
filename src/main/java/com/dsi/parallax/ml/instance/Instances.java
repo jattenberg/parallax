@@ -238,7 +238,7 @@ public abstract class Instances<I extends Instance<?>> implements Serializable,
 		Instances<I> training = makeIstances(dimensions);
 		int foldSize = this.size() / numFolds;
 		int start = fold * foldSize;
-		int end = (int) Math.min(start + foldSize, this.size());
+		int end = Math.min(start + foldSize, this.size());
 		for (int i = 0; i < this.size(); i++) {
 			if (i < start || i >= end) {
 				training.addInstance(this.getInstance(i));
@@ -276,7 +276,7 @@ public abstract class Instances<I extends Instance<?>> implements Serializable,
 		Instances<I> testing = makeIstances(dimensions);
 		int foldSize = this.size() / numFolds;
 		int start = fold * foldSize;
-		int end = (int) Math.min(start + foldSize, this.size());
+		int end = Math.min(start + foldSize, this.size());
 		for (int i = 0; i < this.size(); i++) {
 			if (i >= start && i < end) {
 				testing.addInstance(this.getInstance(i));
@@ -385,6 +385,7 @@ public abstract class Instances<I extends Instance<?>> implements Serializable,
 	 * 
 	 * @return the size
 	 */
+	@Override
 	public int size() {
 		return this.instances.size();
 	}
@@ -420,7 +421,7 @@ public abstract class Instances<I extends Instance<?>> implements Serializable,
 		for (int i = 0; i < this.size(); i++)
 			indexes.add(i);
 		Collections.shuffle(indexes);
-		double first = ((double) this.size()) * percent;
+		double first = this.size() * percent;
 		split[0] = makeIstances(dimensions);
 		split[1] = makeIstances(dimensions);
 		for (int i = 0; i < this.size(); i++) {
@@ -549,7 +550,7 @@ public abstract class Instances<I extends Instance<?>> implements Serializable,
 
 	@Override
 	public <T> T[] toArray(T[] arr) {
-		return (T[]) instances.toArray(arr);
+		return instances.toArray(arr);
 	}
 
 	@Override

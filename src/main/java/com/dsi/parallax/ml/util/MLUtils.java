@@ -169,8 +169,8 @@ public class MLUtils {
 			av1 += y1[i];
 			av2 += y2[i];
 		}
-		av1 /= (double) n;
-		av2 /= (double) n;
+		av1 /= n;
+		av2 /= n;
 		for (i = 0; i < n; i++) {
 			y11 += (y1[i] - av1) * (y1[i] - av1);
 			y22 += (y2[i] - av2) * (y2[i] - av2);
@@ -207,8 +207,8 @@ public class MLUtils {
 			tmp.add(d);
 
 		Collections.sort(tmp);
-		int index = highest ? (int) Math.floor((double) tmp.size() * (1. - q))
-				: (int) Math.ceil((double) tmp.size() * q);
+		int index = highest ? (int) Math.floor(tmp.size() * (1. - q))
+				: (int) Math.ceil(tmp.size() * q);
 		return tmp.get(index);
 
 	}

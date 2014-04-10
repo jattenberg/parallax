@@ -16,6 +16,8 @@ public interface Sink<I,O> extends Iterator<O>{
     
     public void setSource(Pipeline<?,I> pipeline);
     public void setSource(Iterator<Context<I>> source);
-    public O next();
-    public boolean hasNext();
+    @Override
+	public O next();
+    @Override
+	public boolean hasNext();
 }

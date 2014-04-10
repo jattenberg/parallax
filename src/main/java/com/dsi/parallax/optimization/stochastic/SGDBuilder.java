@@ -14,6 +14,7 @@ public class SGDBuilder extends
 		super(dimension, bias);
 	}
 
+	@Override
 	public StochasaticGradientDescent build() {
 		return new StochasaticGradientDescent(dimension, bias,
 				annealingScheduleConfigurableBuilder.build(), truncationBuilder.build(),
