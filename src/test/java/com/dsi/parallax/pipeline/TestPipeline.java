@@ -39,7 +39,6 @@ public class TestPipeline {
                 .addPipe(new StringToTokenSequencePipe())
                 .addPipe(new StringSequenceToNGramsPipe(2))
                 .addPipe(new StringSequenceToNumericDictionaryPipe(bins));
-        // .addPipe(new LinearVectorLengthFilterPipe(2));
 
         Iterator<Context<LinearVector>> it = pipeline.process();
         int ct = 0;
