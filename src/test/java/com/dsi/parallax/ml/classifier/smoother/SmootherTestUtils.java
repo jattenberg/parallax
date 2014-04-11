@@ -2,9 +2,8 @@ package com.dsi.parallax.ml.classifier.smoother;
 
 import static org.junit.Assert.assertTrue;
 
-import com.dsi.parallax.ml.classifier.linear.updateable.AROWClassifier;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.AROWClassifierBuilder;
-import com.dsi.parallax.ml.classifier.smoother.SmootherType;
+import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PassiveAggressiveBuilder;
+import com.dsi.parallax.ml.classifier.linear.updateable.PassiveAggressive;
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
@@ -15,12 +14,13 @@ public class SmootherTestUtils {
 	static int dim = (int) Math.pow(2, 14), min = 3;
 
 	public static void testRegularization(SmootherType type) {
-		AROWClassifierBuilder testBuilder = new AROWClassifierBuilder(dim, true)
-				.setRegulizerType(type).setCrossvalidateSmootherTraining(
-						5);
-		AROWClassifierBuilder baselineBuilder = new AROWClassifierBuilder(dim,
-				true);
-		AROWClassifier baselineModel, testModel;
+
+		PassiveAggressiveBuilder testBuilder = new PassiveAggressiveBuilder(
+				dim, true).setPasses(1).setRegulizerType(type)
+				.setCrossvalidateSmootherTraining(5);
+		PassiveAggressiveBuilder baselineBuilder = new PassiveAggressiveBuilder(
+				dim, true).setPasses(1);
+		PassiveAggressive baselineModel, testModel;
 
 		BinaryClassificationInstances insts = ScienceReader.readScience(dim);
 
@@ -63,11 +63,12 @@ public class SmootherTestUtils {
 
 	// @Test
 	public static void testUpdateableRegularizer(SmootherType type) {
-		AROWClassifierBuilder builder = new AROWClassifierBuilder(dim, true)
-				.setRegulizerType(type).setCrossvalidateSmootherTraining(
-						5);
-		AROWClassifierBuilder builder2 = new AROWClassifierBuilder(dim, true);
-		AROWClassifier model2, model;
+		PassiveAggressiveBuilder builder = new PassiveAggressiveBuilder(dim,
+				true).setRegulizerType(type)
+				.setCrossvalidateSmootherTraining(5);
+		PassiveAggressiveBuilder builder2 = new PassiveAggressiveBuilder(dim,
+				true);
+		PassiveAggressive model2, model;
 
 		BinaryClassificationInstances insts = ScienceReader.readScience(dim);
 
@@ -87,9 +88,11 @@ public class SmootherTestUtils {
 			OnlineEvaluation eval = new OnlineEvaluation();
 			OnlineEvaluation eval2 = new OnlineEvaluation();
 
-			for (BinaryClassificationInstance inst : train) {
-				model.update(inst);
-				model2.update(inst);
+			for (int i = 0; i < 2; i++) {
+				for (BinaryClassificationInstance inst : train) {
+					model.update(inst);
+					model2.update(inst);
+				}
 			}
 
 			for (BinaryClassificationInstance x : test) {
