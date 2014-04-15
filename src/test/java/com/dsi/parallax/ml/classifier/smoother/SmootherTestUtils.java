@@ -61,7 +61,6 @@ public class SmootherTestUtils {
 		}
 	}
 
-	// @Test
 	public static void testUpdateableRegularizer(SmootherType type) {
 		PassiveAggressiveBuilder builder = new PassiveAggressiveBuilder(dim,
 				true).setRegulizerType(type)
@@ -106,6 +105,8 @@ public class SmootherTestUtils {
 
 			assertTrue(eval.computeAUC() > 0.5);
 			assertTrue(eval2.computeAUC() > 0.5);
+			System.out.println(eval.computeBrierScore());
+			System.out.println(eval2.computeBrierScore());
 			assertTrue(eval.computeBrierScore() < eval2.computeBrierScore());
 
 		}
