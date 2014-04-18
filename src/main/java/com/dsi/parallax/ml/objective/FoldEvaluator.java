@@ -53,6 +53,16 @@ public class FoldEvaluator {
 		this.folds = folds;
 		executor = Executors.newFixedThreadPool(Math.min(DEFAULT_FOLDS, folds));
 	}
+	
+	/**
+	 * Instantiates a new fold evaluator.
+	 *
+	 * @param folds the folds
+	 */
+	public FoldEvaluator(int folds, int threads) {
+		this.folds = folds;
+		executor = Executors.newFixedThreadPool(threads);
+	}
 
 	/**
 	 * Evaluate.
