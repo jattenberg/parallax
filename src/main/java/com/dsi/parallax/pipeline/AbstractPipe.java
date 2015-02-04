@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.google.common.base.Function;
+import com.google.common.collect.Iterators;
 
 import java.util.Iterator;
 
-import com.google.common.base.Function;
-import com.google.common.collect.Iterators;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * The abstract class that implements the common functionality seen in pipes by 

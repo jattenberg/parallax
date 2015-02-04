@@ -3,8 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.examples.pipeline;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import com.dsi.parallax.ml.vector.LinearVector;
+import com.dsi.parallax.pipeline.Context;
+import com.dsi.parallax.pipeline.FileSource;
+import com.dsi.parallax.pipeline.Pipeline;
+import com.dsi.parallax.pipeline.file.FileToLinesPipe;
+import com.dsi.parallax.pipeline.text.*;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,17 +16,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 
-import com.dsi.parallax.ml.vector.LinearVector;
-import com.dsi.parallax.pipeline.Context;
-import com.dsi.parallax.pipeline.FileSource;
-import com.dsi.parallax.pipeline.Pipeline;
-import com.dsi.parallax.pipeline.file.FileToLinesPipe;
-import com.dsi.parallax.pipeline.text.StringSequenceToNGramsPipe;
-import com.dsi.parallax.pipeline.text.StringSequenceToNumericDictionaryPipe;
-import com.dsi.parallax.pipeline.text.StringToTokenSequencePipe;
-import com.dsi.parallax.pipeline.text.StringToVWPipe;
-import com.dsi.parallax.pipeline.text.TextSanitizerPipe;
-import com.dsi.parallax.pipeline.text.VWtoLabeledStringPipe;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * This class is to test simple pipeline combination

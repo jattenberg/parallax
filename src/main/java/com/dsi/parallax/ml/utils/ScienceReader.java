@@ -1,10 +1,10 @@
 package com.dsi.parallax.ml.utils;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.pipeline.precompiled.VWtoBinaryInstancesPipeline;
 import com.dsi.parallax.pipeline.precompiled.VWtoBinaryInstancesWithLabelNoisePipeline;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 public class ScienceReader {
 

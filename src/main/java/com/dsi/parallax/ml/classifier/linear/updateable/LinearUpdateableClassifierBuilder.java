@@ -1,7 +1,5 @@
 package com.dsi.parallax.ml.classifier.linear.updateable;
 
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.classifier.UpdateableClassifier;
 import com.dsi.parallax.ml.classifier.UpdateableClassifierBuilder;
@@ -11,16 +9,12 @@ import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanValueBound;
-import com.dsi.parallax.ml.util.option.BooleanOption;
-import com.dsi.parallax.ml.util.option.ConfigurableOption;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.EnumOption;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.IntegerOption;
-import com.dsi.parallax.ml.util.option.OptionSet;
+import com.dsi.parallax.ml.util.option.*;
 import com.dsi.parallax.optimization.regularization.TruncationConfigurableBuilder;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingSchedule;
 import com.dsi.parallax.optimization.stochastic.anneal.ConstantAnnealingSchedule;
+
+import java.util.Arrays;
 
 // TODO: Auto-generated Javadoc
 /**

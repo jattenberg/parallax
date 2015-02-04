@@ -3,9 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.examples.numeric;
 
-import java.io.File;
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.trees.ID3Builder;
 import com.dsi.parallax.ml.classifier.trees.ID3TreeClassifier;
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
@@ -22,6 +19,9 @@ import com.dsi.parallax.pipeline.instance.BinaryClassificationInstancesSink;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
 import com.dsi.parallax.pipeline.text.RegexStringFilterPipe;
 import com.google.common.collect.Maps;
+
+import java.io.File;
+import java.util.Map;
 
 /**
  * An example where examples are represented by numeric features in a CSV file.

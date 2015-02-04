@@ -1,7 +1,5 @@
 package com.dsi.parallax.ml.classifier;
 
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.classifier.smoother.SmootherType;
 import com.dsi.parallax.ml.model.ModelBuilder;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
@@ -9,6 +7,8 @@ import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.EnumOption;
 import com.dsi.parallax.ml.util.option.IntegerOption;
+
+import java.util.Arrays;
 
 /**
  * The Base class for Classifier Builders.

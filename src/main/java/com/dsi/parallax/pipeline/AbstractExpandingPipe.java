@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
-import java.util.Iterator;
-
 import com.google.common.base.Function;
 import com.google.common.collect.Iterators;
+
+import java.util.Iterator;
 
 /**
  * class for pipes producing higher cardinality output than input. 

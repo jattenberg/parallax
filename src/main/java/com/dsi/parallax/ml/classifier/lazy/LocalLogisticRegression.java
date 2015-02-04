@@ -1,13 +1,13 @@
 package com.dsi.parallax.ml.classifier.lazy;
 
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.KDTree.Entry;
+
+import java.util.List;
 
 public class LocalLogisticRegression extends
 		AbstractUpdateableKDTreeClassifier<LocalLogisticRegression> {

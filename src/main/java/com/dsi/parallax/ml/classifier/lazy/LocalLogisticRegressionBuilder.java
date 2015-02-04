@@ -1,13 +1,12 @@
 package com.dsi.parallax.ml.classifier.lazy;
 
-import java.lang.reflect.InvocationTargetException;
-
-import org.apache.commons.cli.ParseException;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.OptionSet;
+import org.apache.commons.cli.ParseException;
+
+import java.lang.reflect.InvocationTargetException;
 
 public class LocalLogisticRegressionBuilder
 		extends

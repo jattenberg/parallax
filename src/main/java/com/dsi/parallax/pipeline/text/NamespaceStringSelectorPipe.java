@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 
 /**
  * NamespaceStringSelectorPipe is primitive class for getting contents of NamespaceText object into context

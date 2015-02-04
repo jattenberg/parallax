@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.objective;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.target.Target;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 // TODO: Auto-generated Javadoc
 /**

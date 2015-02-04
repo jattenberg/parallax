@@ -3,14 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.optimization;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.vector.LinearVector;
+import com.dsi.parallax.ml.vector.util.ValueScaling;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import com.dsi.parallax.ml.vector.LinearVector;
-import com.dsi.parallax.ml.vector.util.ValueScaling;
+import static com.google.common.base.Preconditions.checkArgument;
 
 public class WeightedGradient implements Iterable<Integer>, LinearVector {
 
@@ -236,5 +236,16 @@ public class WeightedGradient implements Iterable<Integer>, LinearVector {
 	public double dot(LinearVector vect, ValueScaling scale) {
 		return gradientVector.dot(vect, scale);
 	}
+
+    @Override
+    public LinearVector times(LinearVector vect) {
+        this.gradientVector.times(vect);
+        return this;
+    }
+
+    @Override
+    public WeightedGradient copy() {
+        return new WeightedGradient(weight, gradientVector.copy());
+    }
 
 }

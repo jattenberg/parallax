@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear;
 
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.vector.LinearVector;
+
+import java.util.List;
 
 /**
  * Interface describing linear classifiers, those classifiers which make

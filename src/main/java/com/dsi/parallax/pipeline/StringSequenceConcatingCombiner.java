@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
+import com.google.common.collect.Lists;
+import com.google.gson.reflect.TypeToken;
+
 import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.List;
-
-import com.google.common.collect.Lists;
-import com.google.gson.reflect.TypeToken;
 
 /**
  * StringSequenceConcatingCombiner combines multiple list context of String to one list context of String

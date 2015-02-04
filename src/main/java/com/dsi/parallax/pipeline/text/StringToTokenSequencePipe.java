@@ -3,16 +3,16 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-import java.util.List;
-import java.util.regex.Pattern;
-
 import com.dsi.parallax.ml.util.lexer.Lexer;
 import com.dsi.parallax.ml.util.lexer.StringLexer;
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Lists;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * turns input strings into ordered sequences of tokens

@@ -1,8 +1,8 @@
 package com.dsi.parallax.ml.util;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import java.util.Random;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * not a bunch of random utilities, but rather utilities for deailing with

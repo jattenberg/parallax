@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-import java.util.regex.Pattern;
-
 import com.dsi.parallax.pipeline.AbstractFilteringPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.regex.Pattern;
 
 /**
  * RegexStringFilterPipe is primitive class for filtering contents of String object

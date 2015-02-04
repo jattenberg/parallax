@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection.featureselection;
 
-import java.util.Collections;
-import java.util.List;
-
 import com.dsi.parallax.ml.distributions.UnivariateGaussianDistribution;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.dsi.parallax.ml.util.pair.SecondDescendingComparator;
 import com.google.common.collect.Lists;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Feature Selection based on the variance of values; selects those values with

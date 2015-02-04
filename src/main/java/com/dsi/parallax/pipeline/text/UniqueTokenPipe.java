@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-import java.util.List;
-import java.util.Set;
-
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.List;
+import java.util.Set;
 
 /**
  * pipe extracting only the unique tokens.

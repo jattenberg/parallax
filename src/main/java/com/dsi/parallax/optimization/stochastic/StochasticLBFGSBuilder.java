@@ -1,7 +1,5 @@
 package com.dsi.parallax.optimization.stochastic;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
@@ -9,6 +7,8 @@ import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.FloatOption;
 import com.dsi.parallax.ml.util.option.IntegerOption;
 import com.dsi.parallax.optimization.stochastic.StochasticBFGSBuilder.StochasticBFGSBuilderOptions;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 public class StochasticLBFGSBuilder extends
 		StochasticGradientOptimizationBuilder<StochasticLBFGSBuilder> {

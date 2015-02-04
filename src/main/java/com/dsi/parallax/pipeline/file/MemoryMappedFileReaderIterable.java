@@ -3,20 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.file;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import com.google.common.io.Files;
+import org.apache.commons.lang.StringUtils;
+
+import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileChannel.MapMode;
 import java.util.Iterator;
 import java.util.LinkedList;
-
-import org.apache.commons.lang.StringUtils;
-
-import com.google.common.io.Files;
 
 /**
  * MemoryMappedFileReaderIterable specializes in reading <b>large</b> files, typically in multiple 

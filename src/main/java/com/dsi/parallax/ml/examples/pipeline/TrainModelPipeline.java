@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.examples.pipeline;
 
-import java.io.File;
-
 import com.dsi.parallax.ml.classifier.lazy.KNNMixingType;
 import com.dsi.parallax.ml.classifier.lazy.SequentialKNN;
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
@@ -17,11 +15,9 @@ import com.dsi.parallax.pipeline.classifier.ModelEvaluationSink;
 import com.dsi.parallax.pipeline.classifier.SequentialClassifierTrainingPipe;
 import com.dsi.parallax.pipeline.file.FileToLinesPipe;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
-import com.dsi.parallax.pipeline.text.StringSequenceToNumericDictionaryPipe;
-import com.dsi.parallax.pipeline.text.StringToTokenSequencePipe;
-import com.dsi.parallax.pipeline.text.StringToVWPipe;
-import com.dsi.parallax.pipeline.text.TextSanitizerPipe;
-import com.dsi.parallax.pipeline.text.VWtoLabeledStringPipe;
+import com.dsi.parallax.pipeline.text.*;
+
+import java.io.File;
 
 // TODO: Auto-generated Javadoc
 /**

@@ -3,15 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.smoother;
 
-import java.util.Collection;
-
-import org.apache.log4j.Logger;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
+import org.apache.log4j.Logger;
+
+import java.util.Collection;
 
 // TODO: Auto-generated Javadoc
 /**

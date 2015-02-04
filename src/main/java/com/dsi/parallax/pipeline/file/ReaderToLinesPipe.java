@@ -1,13 +1,13 @@
 package com.dsi.parallax.pipeline.file;
 
-import java.io.BufferedReader;
-import java.lang.reflect.Type;
-import java.util.Iterator;
-
 import com.dsi.parallax.pipeline.AbstractExpandingPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Iterators;
 import com.google.gson.reflect.TypeToken;
+
+import java.io.BufferedReader;
+import java.lang.reflect.Type;
+import java.util.Iterator;
 
 public class ReaderToLinesPipe extends
 		AbstractExpandingPipe<BufferedReader, String> {

@@ -3,17 +3,17 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.kernelmethods;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.BudgetKernelPerceptronBuilder;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.MLUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * An online kernel-based classifier with a fixed budget for support vectors.

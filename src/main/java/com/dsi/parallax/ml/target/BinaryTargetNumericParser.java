@@ -3,9 +3,8 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.target;
 
-import org.apache.log4j.Logger;
-
 import com.dsi.parallax.ml.util.MLUtils;
+import org.apache.log4j.Logger;
 
 /**
  * BinaryTargetNumericParser converts the string label into a BinaryClassificationTarget

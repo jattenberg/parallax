@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection;
 
-import java.io.Serializable;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.vector.LinearVector;
+
+import java.io.Serializable;
 
 // TODO: Auto-generated Javadoc
 /**

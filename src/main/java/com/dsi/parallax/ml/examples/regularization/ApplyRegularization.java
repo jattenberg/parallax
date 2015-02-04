@@ -1,14 +1,7 @@
 package com.dsi.parallax.ml.examples.regularization;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-
-import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
+import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.target.BinaryTargetNumericParser;
@@ -21,6 +14,13 @@ import com.dsi.parallax.pipeline.instance.BinaryClassificationInstancesSink;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
 import com.dsi.parallax.pipeline.text.StringSplitPipe;
 import com.google.common.collect.Sets;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
 
 public class ApplyRegularization {
 	static File file = new File("./data/train.csv");

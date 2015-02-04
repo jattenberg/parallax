@@ -1,15 +1,15 @@
 package com.dsi.parallax.ml.classifier.ensemble;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.AbstractClassifier;
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.classifier.trees.ID3Builder;
 import com.dsi.parallax.ml.instance.Instance;
 import com.google.common.collect.Lists;
+
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 public abstract class AbstractEnsembleClassifier<C extends AbstractEnsembleClassifier<C>>
 		extends AbstractClassifier<C> {

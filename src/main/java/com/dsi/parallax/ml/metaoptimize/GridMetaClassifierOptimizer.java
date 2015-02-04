@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.metaoptimize;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
@@ -14,6 +12,8 @@ import com.dsi.parallax.ml.objective.Objective;
 import com.dsi.parallax.ml.objective.ObjectiveScorer;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.option.Configuration;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

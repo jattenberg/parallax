@@ -3,17 +3,16 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.file;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.lang.reflect.Type;
-import java.util.Iterator;
-
-import org.apache.log4j.Logger;
-
 import com.dsi.parallax.pipeline.AbstractExpandingPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Iterators;
 import com.google.gson.reflect.TypeToken;
+import org.apache.log4j.Logger;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.lang.reflect.Type;
+import java.util.Iterator;
 
 /**
  * FileToLinesPipe is a primitive class for getting contents of File object 

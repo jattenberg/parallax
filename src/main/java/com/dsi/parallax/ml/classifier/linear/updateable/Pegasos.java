@@ -3,11 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear.updateable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.List;
-import java.util.Queue;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PegasosBuilder;
 import com.dsi.parallax.ml.instance.Instance;
@@ -19,6 +14,11 @@ import com.dsi.parallax.optimization.Gradient;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingSchedule;
 import com.dsi.parallax.optimization.stochastic.anneal.ConstantAnnealingSchedule;
 import com.google.common.collect.Lists;
+
+import java.util.List;
+import java.util.Queue;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

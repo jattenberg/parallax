@@ -3,19 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.mercerkernels;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
-import com.dsi.parallax.ml.util.option.AbstractConfigurable;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.EnumOption;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.Option;
-import com.dsi.parallax.ml.util.option.OptionSet;
+import com.dsi.parallax.ml.util.option.*;
+
+import java.util.Arrays;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

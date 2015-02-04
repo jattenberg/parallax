@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.smoother;
 
-import java.util.Collection;
-
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
+
+import java.util.Collection;
 
 // TODO: Auto-generated Javadoc
 /**

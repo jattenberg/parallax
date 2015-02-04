@@ -3,19 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier;
 
-import java.io.File;
-import java.lang.reflect.InvocationTargetException;
-
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.GnuParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.OptionBuilder;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.time.StopWatch;
-
 import com.dsi.parallax.ml.evaluation.ConfusionMatrix;
 import com.dsi.parallax.ml.evaluation.ReceiverOperatingCharacteristic;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
@@ -30,13 +17,13 @@ import com.dsi.parallax.pipeline.csv.NumericCSVtoLabeledVectorPipe;
 import com.dsi.parallax.pipeline.file.FileToLinesPipe;
 import com.dsi.parallax.pipeline.instance.BinaryClassificationInstancesSink;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
-import com.dsi.parallax.pipeline.text.RegexStringFilterPipe;
-import com.dsi.parallax.pipeline.text.StringSequenceToNGramsPipe;
-import com.dsi.parallax.pipeline.text.StringSequenceToNumericDictionaryPipe;
-import com.dsi.parallax.pipeline.text.StringToTokenSequencePipe;
-import com.dsi.parallax.pipeline.text.StringToVWPipe;
-import com.dsi.parallax.pipeline.text.TextSanitizerPipe;
-import com.dsi.parallax.pipeline.text.VWtoLabeledStringPipe;
+import com.dsi.parallax.pipeline.text.*;
+import org.apache.commons.cli.*;
+import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.StopWatch;
+
+import java.io.File;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * "main" class facilitating convenient command line usage for classifier types.

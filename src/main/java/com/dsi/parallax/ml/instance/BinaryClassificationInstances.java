@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.instance;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.util.MLUtils;
+import com.google.common.collect.Lists;
 
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-import com.dsi.parallax.ml.util.MLUtils;
-import com.google.common.collect.Lists;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Collection for individual {@link BinaryClassificationInstance}'s. Provides

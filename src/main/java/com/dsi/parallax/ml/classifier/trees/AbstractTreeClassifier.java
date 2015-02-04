@@ -3,30 +3,17 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.trees;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.AbstractClassifier;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
-import com.dsi.parallax.ml.trees.AttributeValueCache;
-import com.dsi.parallax.ml.trees.BinaryTargetEntropyTerminator;
-import com.dsi.parallax.ml.trees.EmptyTerminator;
-import com.dsi.parallax.ml.trees.LeafCreator;
-import com.dsi.parallax.ml.trees.MaximumDepthTerminator;
-import com.dsi.parallax.ml.trees.MinExamplesTerminator;
-import com.dsi.parallax.ml.trees.ProjectionFactory;
-import com.dsi.parallax.ml.trees.Pruner;
-import com.dsi.parallax.ml.trees.Root;
-import com.dsi.parallax.ml.trees.SingleLabelTerminator;
-import com.dsi.parallax.ml.trees.SplitCriterion;
-import com.dsi.parallax.ml.trees.Splitter;
+import com.dsi.parallax.ml.trees.*;
 import com.dsi.parallax.ml.trees.Terminator;
-import com.dsi.parallax.ml.trees.Tree;
-import com.dsi.parallax.ml.trees.TreeBuilder;
 import com.google.common.collect.Lists;
+
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Base class for decision tree-based classifiers. Reduces the specification of

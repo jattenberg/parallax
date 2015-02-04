@@ -3,14 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.classifier;
 
-import java.lang.reflect.Type;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 
 // TODO: Auto-generated Javadoc
 /**

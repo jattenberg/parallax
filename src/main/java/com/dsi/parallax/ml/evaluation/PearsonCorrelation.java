@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.evaluation;
 
+import com.dsi.parallax.ml.util.pair.PrimitivePair;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.dsi.parallax.ml.util.pair.PrimitivePair;
 
 // TODO: Auto-generated Javadoc
 /**

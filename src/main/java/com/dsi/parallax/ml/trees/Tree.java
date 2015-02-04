@@ -3,10 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import java.io.Serializable;
-import java.util.Collections;
-import java.util.Set;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.model.Model;
@@ -15,6 +11,10 @@ import com.dsi.parallax.ml.target.Target;
 import com.google.common.base.Function;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Sets;
+
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.Set;
 
 // TODO: Auto-generated Javadoc
 /**

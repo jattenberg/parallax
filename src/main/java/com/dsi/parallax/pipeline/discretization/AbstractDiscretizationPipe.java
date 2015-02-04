@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.discretization;
 
-import java.util.Map;
-import java.util.Set;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.pipeline.AbstractAccumulatingPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+
+import java.util.Map;
+import java.util.Set;
 
 /**
  * base class for discretizing continuous variables; takes a continuous variable

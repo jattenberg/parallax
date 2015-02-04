@@ -3,9 +3,8 @@
  ******************************************************************************/
 package com.dsi.parallax.optimization;
 
-import org.apache.log4j.Logger;
-
 import com.dsi.parallax.ml.vector.LinearVector;
+import org.apache.log4j.Logger;
 
 public abstract class AbstractOptimizer implements Optimizer {
 	/**

@@ -3,9 +3,8 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.objective;
 
-import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
-
 import com.dsi.parallax.ml.target.Target;
+import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
 
 /**
  * Compiles multiple {@link Objective} values (for instance, objectives computed

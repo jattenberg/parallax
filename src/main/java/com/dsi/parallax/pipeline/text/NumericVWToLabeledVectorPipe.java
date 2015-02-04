@@ -1,14 +1,13 @@
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-
-import org.apache.commons.lang.StringUtils;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.lang.StringUtils;
+
+import java.lang.reflect.Type;
 
 /**
  * Pipe to convert a string containing a labeled sample in the Numeric VW format 

@@ -1,8 +1,5 @@
 package com.dsi.parallax.ml.utils;
 
-import java.io.File;
-import java.util.Map;
-
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.target.BinaryTargetNumericParser;
@@ -14,6 +11,9 @@ import com.dsi.parallax.pipeline.instance.BinaryClassificationInstancesSink;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
 import com.dsi.parallax.pipeline.projection.IntervalNormalizationPipe;
 import com.google.common.collect.Maps;
+
+import java.io.File;
+import java.util.Map;
 
 public class IrisReader {
 

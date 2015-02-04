@@ -3,49 +3,39 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.bayes.NaiveBayes;
 import com.dsi.parallax.ml.classifier.bayes.NaiveBayesBuilder;
 import com.dsi.parallax.ml.classifier.kernelmethods.BudgetKernelPerceptron;
 import com.dsi.parallax.ml.classifier.kernelmethods.Forgetron;
-import com.dsi.parallax.ml.classifier.kernelmethods.KernelSGD;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.BudgetKernelPerceptronBuilder;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.ForgetronBuilder;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.KernelSGDBuilder;
+import com.dsi.parallax.ml.classifier.kernelmethods.KernelSGD;
 import com.dsi.parallax.ml.classifier.lazy.LocalLogisticRegression;
 import com.dsi.parallax.ml.classifier.lazy.LocalLogisticRegressionBuilder;
 import com.dsi.parallax.ml.classifier.lazy.SequentialKNN;
 import com.dsi.parallax.ml.classifier.lazy.SequentialKNNBuilder;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradienUpdateableQuadraticSVM;
-import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableL2;
-import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableLogisticRegression;
-import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableModifiedHuber;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableL2Builder;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableLogisticRegressionBuilder;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableModifiedHuberBuilder;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableQuadraticSVMBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.AROWClassifier;
-import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
-import com.dsi.parallax.ml.classifier.linear.updateable.PassiveAggressive;
-import com.dsi.parallax.ml.classifier.linear.updateable.Pegasos;
-import com.dsi.parallax.ml.classifier.linear.updateable.PerceptronWithMargin;
-import com.dsi.parallax.ml.classifier.linear.updateable.WinnowClassifier;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.AROWClassifierBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PassiveAggressiveBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PegasosBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PerceptronWithMarginBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.WinnowClassifierBuilder;
+import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableL2;
+import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableLogisticRegression;
+import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableModifiedHuber;
+import com.dsi.parallax.ml.classifier.linear.updateable.*;
+import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.*;
 import com.dsi.parallax.ml.classifier.rules.MeanClassifier;
-import com.dsi.parallax.ml.classifier.rules.ModeClassifier;
 import com.dsi.parallax.ml.classifier.rules.MeanClassifier.MeanClassifierBuilder;
+import com.dsi.parallax.ml.classifier.rules.ModeClassifier;
 import com.dsi.parallax.ml.classifier.rules.ModeClassifier.ModeClassifierBuilder;
 import com.dsi.parallax.ml.classifier.trees.ID3Builder;
 import com.dsi.parallax.ml.classifier.trees.ID3TreeClassifier;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.OptionSet;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 /**
  * an enumeration on the type of classifiers. also defines some utility methods

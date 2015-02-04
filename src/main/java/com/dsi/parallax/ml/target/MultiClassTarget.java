@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.target;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.util.MLUtils;
 
 import java.util.List;
 
-import com.dsi.parallax.ml.util.MLUtils;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * MultiClassTarget defines multiple class target

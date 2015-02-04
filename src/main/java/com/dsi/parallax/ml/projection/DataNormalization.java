@@ -1,16 +1,15 @@
 package com.dsi.parallax.ml.projection;
 
-import java.util.Collection;
-import java.util.Map;
-
-import org.apache.commons.math.stat.descriptive.SummaryStatistics;
-
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.google.common.collect.Maps;
+import org.apache.commons.math.stat.descriptive.SummaryStatistics;
+
+import java.util.Collection;
+import java.util.Map;
 
 
 /**

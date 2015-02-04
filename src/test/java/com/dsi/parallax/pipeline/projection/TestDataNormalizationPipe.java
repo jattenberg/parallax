@@ -25,7 +25,7 @@ import com.google.common.collect.Maps;
 public class TestDataNormalizationPipe {
 	
 	/** The test data file */
-	static String datadir = "/Users/spchopra/research/ml/dsi/data/";
+	static String datadir = "data/";
 	static String filename = datadir + "spambase.csv";
 	static int inpDim = 57;
 	static Map<String, String> labelMap = Maps.newHashMap();
@@ -53,18 +53,12 @@ public class TestDataNormalizationPipe {
 		
 		assertTrue(!dnorm.isBuilt());
 		Iterator<Context<BinaryClassificationInstance>> it = pipeline.process();
-		
-		// print the normalization parameters
-		System.out.println("Normalization params:");
-		System.out.println(dnorm);
+
 		
 		int ctr = 0;
 		while (it.hasNext()) {
 			BinaryClassificationInstance inst = it.next().getData();
 			assertTrue(dnorm.isBuilt());
-			if (ctr < 5) {
-				inst.printInstance();
-			}
 			ctr++;
 		}
 	}

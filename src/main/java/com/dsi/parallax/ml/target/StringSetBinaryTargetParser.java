@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.target;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import java.util.Set;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * matches a set of strings to positive and negative labels

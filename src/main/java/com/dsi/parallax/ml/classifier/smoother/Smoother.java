@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.smoother;
 
+import com.dsi.parallax.ml.util.pair.PrimitivePair;
+
 import java.util.Collection;
 import java.util.EnumSet;
-
-import com.dsi.parallax.ml.util.pair.PrimitivePair;
 
 // TODO: Auto-generated Javadoc
 /**

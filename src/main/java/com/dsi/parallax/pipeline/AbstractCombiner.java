@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
+import com.google.common.collect.Lists;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-
-import com.google.common.collect.Lists;
 
 public abstract class AbstractCombiner<I, O> implements Combiner<I, O> {
 

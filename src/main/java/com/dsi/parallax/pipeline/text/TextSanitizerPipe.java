@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 
 /**
  * TextSanitizerPipe is primitive class for getting contents of String object into context

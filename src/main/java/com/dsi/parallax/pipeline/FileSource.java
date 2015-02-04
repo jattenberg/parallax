@@ -3,14 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
+import com.google.common.collect.Lists;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.File;
 import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-
-import com.google.common.collect.Lists;
-import com.google.gson.reflect.TypeToken;
 
 /**
  * FileSource accepts one or more files and generates generic iterator of context

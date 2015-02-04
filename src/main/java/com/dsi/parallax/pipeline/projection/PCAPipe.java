@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.projection;
 
-import java.lang.reflect.Type;
-import java.util.List;
-
 import com.dsi.parallax.ml.projection.PrincipalComponentsAnalysis;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.pipeline.AbstractAccumulatingPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Collections2;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.List;
 
 // TODO: Auto-generated Javadoc
 /**

@@ -3,14 +3,13 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.objective;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
+import com.dsi.parallax.ml.target.Target;
 import org.apache.commons.math.MathException;
 import org.apache.commons.math.distribution.TDistribution;
 import org.apache.commons.math.distribution.TDistributionImpl;
 import org.apache.commons.math.stat.descriptive.SummaryStatistics;
 
-import com.dsi.parallax.ml.target.Target;
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

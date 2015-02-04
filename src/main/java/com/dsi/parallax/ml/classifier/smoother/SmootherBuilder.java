@@ -1,16 +1,12 @@
 package com.dsi.parallax.ml.classifier.smoother;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
+import com.dsi.parallax.ml.util.option.*;
+import com.dsi.parallax.ml.util.pair.PrimitivePair;
 
 import java.util.Collection;
 
-import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
-import com.dsi.parallax.ml.util.option.AbstractConfigurable;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.IntegerOption;
-import com.dsi.parallax.ml.util.option.OptionSet;
-import com.dsi.parallax.ml.util.pair.PrimitivePair;
+import static com.google.common.base.Preconditions.checkArgument;
 
 public abstract class SmootherBuilder<R extends Smoother<R>, B extends SmootherBuilder<R, B>>
 		extends AbstractConfigurable<B> {

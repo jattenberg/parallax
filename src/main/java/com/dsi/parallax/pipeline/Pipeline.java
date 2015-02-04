@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
+import com.google.common.collect.Lists;
+
 import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
-
-import com.google.common.collect.Lists;
 
 /**
  * Class to handle serial data processing. Its a container class which connects 

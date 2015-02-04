@@ -3,16 +3,16 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.instance;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.lang.reflect.Type;
-
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * A pipe that randomly flips the binary labels of incoming instances according

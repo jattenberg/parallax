@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.model;
 
-import java.io.Serializable;
-
 import com.dsi.parallax.ml.target.Target;
+
+import java.io.Serializable;
 
 /**
  * The Class AbstractModel. Base class for all predictive models

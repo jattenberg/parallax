@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.rules;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.AbstractClassifier;
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.classifier.Classifiers;
@@ -14,6 +12,8 @@ import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 // TODO: Auto-generated Javadoc
 /**

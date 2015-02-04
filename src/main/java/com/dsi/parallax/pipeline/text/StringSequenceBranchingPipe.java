@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-import java.util.List;
-
 import com.dsi.parallax.pipeline.AbstractBranchingPipe;
 import com.dsi.parallax.pipeline.StringSequenceConcatingCombiner;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.List;
 
 /**
  * yes, this is the whole class. 

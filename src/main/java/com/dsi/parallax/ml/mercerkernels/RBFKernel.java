@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.mercerkernels;
 
+import com.dsi.parallax.ml.instance.Instance;
+
 import java.util.HashSet;
 import java.util.Set;
-
-import com.dsi.parallax.ml.instance.Instance;
 
 // TODO: Auto-generated Javadoc
 /**

@@ -3,10 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import org.apache.commons.lang.builder.EqualsBuilder;
-
 import com.dsi.parallax.ml.target.Target;
 import com.google.common.collect.ComparisonChain;
+import org.apache.commons.lang.builder.EqualsBuilder;
 
 /**
  * A simple container for associating an attribute value with a label.

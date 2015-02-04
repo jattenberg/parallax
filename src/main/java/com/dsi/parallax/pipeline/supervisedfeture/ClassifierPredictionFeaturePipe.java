@@ -3,10 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.supervisedfeture;
 
-import java.lang.reflect.Type;
-import java.util.Iterator;
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
@@ -18,6 +14,10 @@ import com.dsi.parallax.pipeline.AbstractAccumulatingPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Iterators;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * a pipe component that adds an additional feature to examples based on the

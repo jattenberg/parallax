@@ -1,10 +1,6 @@
 package com.dsi.parallax.optimization.stochastic.anneal;
 
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.NestedConfiguration;
-import com.dsi.parallax.ml.util.option.ParentNestedConfigurable;
-import com.dsi.parallax.ml.util.option.ParentNestedConfigurableOptionSet;
-import com.dsi.parallax.ml.util.option.NestedConfigurableType;
+import com.dsi.parallax.ml.util.option.*;
 
 public class AnnealingScheduleConfigurableBuilder
 		extends

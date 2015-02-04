@@ -1,19 +1,15 @@
 package com.dsi.parallax.ml.classifier.lazy;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.AbstractUpdateableClassifier;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.KDTree;
-import com.dsi.parallax.ml.util.KDTree.Entry;
-import com.dsi.parallax.ml.util.KDTree.Manhattan;
-import com.dsi.parallax.ml.util.KDTree.SqrEuclid;
-import com.dsi.parallax.ml.util.KDTree.WeightedManhattan;
-import com.dsi.parallax.ml.util.KDTree.WeightedSqrEuclid;
+import com.dsi.parallax.ml.util.KDTree.*;
+
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 public abstract class AbstractUpdateableKDTreeClassifier<C extends AbstractUpdateableKDTreeClassifier<C>>
 		extends AbstractUpdateableClassifier<C> {

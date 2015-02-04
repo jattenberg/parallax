@@ -1,17 +1,15 @@
 package com.dsi.parallax.pipeline.text;
 
+import au.com.bytecode.opencsv.CSVParser;
+import com.dsi.parallax.pipeline.AbstractPipe;
+import com.dsi.parallax.pipeline.Context;
+import com.google.gson.reflect.TypeToken;
+import org.apache.log4j.Logger;
+
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.List;
-
-import org.apache.log4j.Logger;
-
-import au.com.bytecode.opencsv.CSVParser;
-
-import com.dsi.parallax.pipeline.AbstractPipe;
-import com.dsi.parallax.pipeline.Context;
-import com.google.gson.reflect.TypeToken;
 
 public class StringSplitPipe extends AbstractPipe<String, List<String>> {
 

@@ -3,14 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.classifier;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Iterator;
-
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
 import com.dsi.parallax.pipeline.AbstractSink;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Iterators;
+
+import java.util.Iterator;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

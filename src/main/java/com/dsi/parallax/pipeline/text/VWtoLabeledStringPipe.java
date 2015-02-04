@@ -3,13 +3,13 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-import java.util.Map;
-
 import com.dsi.parallax.ml.util.VW;
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.Map;
 
 /**
  * very primitive class for getting contents of VW object into context 

@@ -3,11 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.kernelmethods;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.ForgetronBuilder;
 import com.dsi.parallax.ml.instance.Instance;
@@ -15,6 +10,11 @@ import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Forgetron model for kernel classifiers with a fixed number of support

@@ -1,15 +1,14 @@
 package com.dsi.parallax.ml.classifier.ensemble;
 
-import java.lang.reflect.InvocationTargetException;
-import java.util.List;
-
-import org.apache.commons.cli.ParseException;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.google.common.collect.Lists;
+import org.apache.commons.cli.ParseException;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.List;
 
 public class BaggingEnsenbleClassifier extends
 		AbstractEnsembleClassifier<BaggingEnsenbleClassifier> {

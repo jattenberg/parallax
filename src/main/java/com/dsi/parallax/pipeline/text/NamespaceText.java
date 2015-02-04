@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.util.VW;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 /**
  * NamespaceText is JavaBean stores contents of VM

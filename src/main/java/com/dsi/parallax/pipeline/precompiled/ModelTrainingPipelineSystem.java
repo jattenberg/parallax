@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.precompiled;
 
-import java.io.File;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
+
+import java.io.File;
 
 // TODO: Auto-generated Javadoc
 /**

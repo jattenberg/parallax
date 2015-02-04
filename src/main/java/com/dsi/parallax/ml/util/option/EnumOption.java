@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.util.option;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.google.common.collect.Lists;
 
 import java.util.EnumSet;
 import java.util.List;
 
-import com.google.common.collect.Lists;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * EnumOption is enum Option

@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.bayes;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.AbstractUpdateableClassifier;
 import com.dsi.parallax.ml.distributions.Distribution;
 import com.dsi.parallax.ml.distributions.DistributionConfigurableBuilder;
@@ -13,6 +11,8 @@ import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.util.option.Configuration;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

@@ -9,12 +9,6 @@ import com.google.common.collect.Iterables;
  **********************************************************/
 package com.dsi.parallax.optimization.stochastic;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.ml.vector.util.VectorUtils;
@@ -24,6 +18,12 @@ import com.dsi.parallax.optimization.regularization.GradientTruncation;
 import com.dsi.parallax.optimization.regularization.LinearCoefficientLossType;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingSchedule;
 import com.google.common.collect.Lists;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 //TODO: still baking
 public class StochasticLBFGS extends AbstractGradientStochasticOptimizer {

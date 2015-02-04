@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.dictionary;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Collection;
-import java.util.Map;
-
 import com.dsi.parallax.ml.util.HashFunctionType;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.google.common.collect.Maps;
+
+import java.util.Collection;
+import java.util.Map;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * HashDictionary

@@ -4,11 +4,7 @@
 package com.dsi.parallax.ml.classifier.trees;
 
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
-import com.dsi.parallax.ml.trees.BinaryTargetAccuracySplitCriterion;
-import com.dsi.parallax.ml.trees.BinaryTargetGiniSplitCriterion;
-import com.dsi.parallax.ml.trees.BinaryTargetHellingerSplitCriterion;
-import com.dsi.parallax.ml.trees.BinaryTargetInfoGainSplitCriterion;
-import com.dsi.parallax.ml.trees.SplitCriterion;
+import com.dsi.parallax.ml.trees.*;
 
 /**
  * A simple enumeration over the different binary target decision tree split

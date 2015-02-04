@@ -1,20 +1,16 @@
 package com.dsi.parallax.ml.classifier.linear.optimizable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.classifier.UpdateableClassifierBuilder;
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
-import com.dsi.parallax.ml.util.option.ConfigurableOption;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.IntegerOption;
-import com.dsi.parallax.ml.util.option.OptionSet;
+import com.dsi.parallax.ml.util.option.*;
 import com.dsi.parallax.optimization.regularization.TruncationConfigurableBuilder;
 import com.dsi.parallax.optimization.stochastic.SGDBuilder;
 import com.dsi.parallax.optimization.stochastic.StochasticGradientOptimizationBuilder;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

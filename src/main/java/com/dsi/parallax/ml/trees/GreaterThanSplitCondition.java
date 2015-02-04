@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.dictionary.ReversableDictionary;
 import com.dsi.parallax.ml.instance.Instance;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * {@link SplitCondition} which returns true if the input feature value is

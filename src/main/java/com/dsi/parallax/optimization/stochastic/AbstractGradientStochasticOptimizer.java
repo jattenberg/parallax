@@ -3,11 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.optimization.stochastic;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Arrays;
-import java.util.Map;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.optimization.Gradient;
@@ -15,6 +10,11 @@ import com.dsi.parallax.optimization.Optimizable;
 import com.dsi.parallax.optimization.regularization.GradientTruncation;
 import com.dsi.parallax.optimization.regularization.LinearCoefficientLossType;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingSchedule;
+
+import java.util.Arrays;
+import java.util.Map;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * base class for stochastic, gradient-based optimization methods. provides

@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
@@ -23,6 +24,7 @@ public class TestFoldEvaluator {
 
 	int folds = 10;
 
+    @Ignore
 	@Test
 	public void testFolds() throws InterruptedException {
 		BinaryClassificationInstances instances = TestUtils.getTextInstances();
@@ -56,6 +58,7 @@ public class TestFoldEvaluator {
 
 	}
 
+    @Ignore
 	@Test
 	public void testFoldsScorer() throws InterruptedException {
 		BinaryClassificationInstances instances = TestUtils.getTextInstances();

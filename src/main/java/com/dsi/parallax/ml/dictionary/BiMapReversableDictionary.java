@@ -3,14 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.dictionary;
 
-import java.util.Collection;
-import java.util.Map;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.google.common.collect.Maps;
+
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * BiMapReversableDictionary

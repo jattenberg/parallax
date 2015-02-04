@@ -1,9 +1,5 @@
 package com.dsi.parallax.ml.classifier.kernelmethods;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.classifier.UpdateableClassifierBuilder;
 import com.dsi.parallax.ml.evaluation.LossGradientType;
@@ -12,12 +8,11 @@ import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanValueBound;
-import com.dsi.parallax.ml.util.option.ConfigurableOption;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.EnumOption;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.IntegerOption;
-import com.dsi.parallax.ml.util.option.OptionSet;
+import com.dsi.parallax.ml.util.option.*;
+
+import java.util.Arrays;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Builder for Updateable kernel-based classifeirs

@@ -3,16 +3,16 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.instance;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.util.ValueScaling;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Class representing Instanzes with binary classification labels.
@@ -272,4 +272,15 @@ public class BinaryClassificationInstance extends
 	public double[] getWbias(int biasTerms) {
 		return vector.getWbias(biasTerms);
 	}
+
+    @Override
+    public BinaryClassificationInstance copy() {
+        return new BinaryClassificationInstance(this.label, vector.copy());
+    }
+
+    @Override
+    public BinaryClassificationInstance times(LinearVector vect) {
+        this.vector.times(vect);
+        return this;
+    }
 }

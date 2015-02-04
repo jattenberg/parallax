@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection;
 
-import java.util.Collection;
-
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.google.common.collect.Lists;
+
+import java.util.Collection;
 
 // TODO: Auto-generated Javadoc
 /**

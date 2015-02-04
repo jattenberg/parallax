@@ -3,13 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.examples.text;
 
-import java.io.File;
-import java.util.Iterator;
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.UpdateableType;
-import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
+import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
@@ -25,6 +21,10 @@ import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
 import com.dsi.parallax.pipeline.instance.IntroduceLabelNoisePipe;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Maps;
+
+import java.io.File;
+import java.util.Iterator;
+import java.util.Map;
 
 // TODO: Auto-generated Javadoc
 /**

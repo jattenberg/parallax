@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
-import java.lang.reflect.Type;
-
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 
 /**
  * replaces every incoming example with the O defined on construction

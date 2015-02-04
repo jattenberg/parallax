@@ -6,6 +6,7 @@ package com.dsi.parallax.ml.metaoptimize;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.Ignore;
 
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.classifier.bayes.NaiveBayes;
@@ -124,6 +125,7 @@ public class TestGridMetaClassifierOptimizer {
 	 * Test optimizes nested configs.
 	 */
 	@Test
+    @Ignore
 	public void testOptimizesNestedConfigs() {
 
 		NaiveBayesBuilder nbb = new NaiveBayesBuilder(dim, false);
@@ -166,6 +168,7 @@ public class TestGridMetaClassifierOptimizer {
 	/**
 	 * Test optimizes nested configs using several simultanious threads
 	 */
+    @Ignore
 	@Test
 	public void testOptimizesNestedConfigsMultiThread() {
 

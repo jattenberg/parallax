@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear.optimizable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
@@ -14,6 +12,8 @@ import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.ml.vector.util.VectorUtils;
 import com.dsi.parallax.optimization.Gradient;
 import com.dsi.parallax.optimization.stochastic.StochasticGradientOptimizationBuilder;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * A classifier that optimizes the subgradient of Quadratic Hinge Loss, capable

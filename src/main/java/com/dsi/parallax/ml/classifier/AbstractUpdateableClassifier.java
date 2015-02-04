@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.smoother.UpdateableSmoother;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
@@ -12,6 +10,8 @@ import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 //TODO: apply more general annealing techniques used in the Optimization project

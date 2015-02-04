@@ -3,10 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.io.Serializable;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
@@ -15,6 +11,10 @@ import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.FloatOption;
 import com.dsi.parallax.ml.util.option.OptionSet;
+
+import java.io.Serializable;
+
+import static com.google.common.base.Preconditions.checkArgument;
 //TODO: revise to make more configurable, remove final fields. 
 /**
  * decorator for a correcting the probability estimates of a classifier trained

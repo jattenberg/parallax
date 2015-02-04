@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.util.option;
 
-import java.io.Serializable;
-import java.lang.reflect.InvocationTargetException;
-
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.ParseException;
+
+import java.io.Serializable;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * AbstractConfigurable is abstract class that can be configured from a configurable object.

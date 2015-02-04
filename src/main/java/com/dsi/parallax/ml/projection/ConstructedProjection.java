@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection;
 
-import java.util.Collection;
-
 import com.dsi.parallax.ml.vector.LinearVector;
+
+import java.util.Collection;
 
 /**
  * interface for projections that require data for construction eg. PCA

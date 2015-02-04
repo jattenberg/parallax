@@ -1,7 +1,5 @@
 package com.dsi.parallax.ml.classifier.bayes;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.classifier.UpdateableClassifierBuilder;
 import com.dsi.parallax.ml.distributions.DistributionConfigurableBuilder;
@@ -11,6 +9,8 @@ import com.dsi.parallax.ml.util.option.ConfigurableOption;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.FloatOption;
 import com.dsi.parallax.ml.util.option.OptionSet;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

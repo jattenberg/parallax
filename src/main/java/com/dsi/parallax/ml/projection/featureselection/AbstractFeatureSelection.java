@@ -3,11 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection.featureselection;
 
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.projection.AbstractProjection;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
+
+import java.util.Arrays;
 
 /**
  * Base class for all feature selection methods; Methods that attempt to find the 

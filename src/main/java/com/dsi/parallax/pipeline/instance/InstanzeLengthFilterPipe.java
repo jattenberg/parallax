@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.instance;
 
-import java.lang.reflect.Type;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.pipeline.AbstractFilteringPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 
 // TODO: Auto-generated Javadoc
 /**

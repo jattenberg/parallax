@@ -1,11 +1,5 @@
 package com.dsi.parallax.ml.examples.numeric;
 
-import java.io.File;
-import java.util.Map;
-
-import org.apache.commons.lang.time.StopWatch;
-import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
@@ -19,6 +13,11 @@ import com.dsi.parallax.pipeline.instance.BinaryClassificationInstancesSink;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
 import com.dsi.parallax.pipeline.text.RegexStringFilterPipe;
 import com.google.common.collect.Maps;
+import org.apache.commons.lang.time.StopWatch;
+import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
+
+import java.io.File;
+import java.util.Map;
 
 /**
  * An example for comparing the training time for a variety of classifier types.

@@ -1,11 +1,5 @@
 package com.dsi.parallax.pipeline.projection;
 
-import java.lang.reflect.Type;
-import java.util.List;
-import java.util.Map;
-
-import org.apache.commons.math.stat.descriptive.SummaryStatistics;
-
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.dsi.parallax.ml.vector.LinearVector;
@@ -15,6 +9,11 @@ import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Maps;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.math.stat.descriptive.SummaryStatistics;
+
+import java.lang.reflect.Type;
+import java.util.List;
+import java.util.Map;
 
 public class IntervalNormalizationPipe extends
 		AbstractAccumulatingPipe<LinearVector, LinearVector> {

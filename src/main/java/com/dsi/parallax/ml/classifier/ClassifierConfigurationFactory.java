@@ -5,12 +5,7 @@ import com.dsi.parallax.ml.classifier.bayes.NaiveBayesBuilder;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.BudgetKernelPerceptronBuilder;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.ForgetronBuilder;
 import com.dsi.parallax.ml.classifier.lazy.SequentialKNNBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.AROWClassifierBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PassiveAggressiveBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PegasosBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.PerceptronWithMarginBuilder;
-import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.WinnowClassifierBuilder;
+import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.*;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.OptionSet;
 

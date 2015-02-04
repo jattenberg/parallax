@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.vector.LinearVector;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Base class for Abstract projections, methods that transform data from one

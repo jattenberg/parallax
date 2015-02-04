@@ -1,9 +1,5 @@
 package com.dsi.parallax.pipeline.csv;
 
-import java.io.File;
-import java.lang.reflect.Type;
-import java.util.Iterator;
-
 import com.dsi.parallax.ml.util.csv.CSV;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.pipeline.Context;
@@ -13,6 +9,10 @@ import com.dsi.parallax.pipeline.Source;
 import com.dsi.parallax.pipeline.file.FileToLinesPipe;
 import com.dsi.parallax.pipeline.text.StringSplitPipe;
 import com.google.gson.reflect.TypeToken;
+
+import java.io.File;
+import java.lang.reflect.Type;
+import java.util.Iterator;
 
 public class CSVSource implements Source<LinearVector> {
 

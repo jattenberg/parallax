@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.util;
 
+import com.google.common.base.Function;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
-
-import com.google.common.base.Function;
 
 public class DefuturingFunction<F> implements Function<Future<F>, F> {
 

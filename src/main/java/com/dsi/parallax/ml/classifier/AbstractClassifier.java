@@ -3,9 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier;
 
-import java.io.Serializable;
-import java.util.Collection;
-
 import com.dsi.parallax.ml.classifier.smoother.Smoother;
 import com.dsi.parallax.ml.classifier.smoother.SmootherType;
 import com.dsi.parallax.ml.instance.Instance;
@@ -14,6 +11,9 @@ import com.dsi.parallax.ml.model.AbstractModel;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.google.common.collect.Lists;
+
+import java.io.Serializable;
+import java.util.Collection;
 
 /**
  * The base class for for any classifier. Handles the training and application

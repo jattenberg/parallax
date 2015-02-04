@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import java.io.Serializable;
-
 import com.dsi.parallax.ml.target.Target;
 import com.google.common.collect.ComparisonChain;
+
+import java.io.Serializable;
 
 /**
  * An edge in a decision tree; the connection split condition determining which

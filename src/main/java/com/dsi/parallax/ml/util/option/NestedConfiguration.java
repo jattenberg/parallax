@@ -1,15 +1,15 @@
 package com.dsi.parallax.ml.util.option;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.GnuParser;
+import org.apache.commons.cli.ParseException;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.EnumSet;
 
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.GnuParser;
-import org.apache.commons.cli.ParseException;
+import static com.google.common.base.Preconditions.checkArgument;
 
 public class NestedConfiguration<T extends Enum<T> & NestedConfigurableType<C, T>, C extends NestedConfigurable<C, T>, P extends ParentNestedConfigurable<T, C, P>>
 		extends Configuration<P> {

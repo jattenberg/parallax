@@ -3,14 +3,13 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.lazy;
 
-import java.util.List;
-import java.util.Map;
-
-import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
-
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.KDTree.Entry;
 import com.google.common.collect.Maps;
+import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
+
+import java.util.List;
+import java.util.Map;
 
 // TODO: Auto-generated Javadoc
 /**

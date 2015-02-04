@@ -1,7 +1,5 @@
 package com.dsi.parallax.ml.classifier.trees;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
@@ -9,6 +7,8 @@ import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.FloatOption;
 import com.dsi.parallax.ml.util.option.IntegerOption;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

@@ -1,19 +1,15 @@
 package com.dsi.parallax.pipeline.file;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.Reader;
-import java.lang.reflect.Type;
-import java.util.Iterator;
-import java.util.List;
-
 import com.dsi.parallax.pipeline.Context;
 import com.dsi.parallax.pipeline.GenericContextIterator;
 import com.dsi.parallax.pipeline.Source;
 import com.google.common.collect.Lists;
 import com.google.gson.reflect.TypeToken;
+
+import java.io.*;
+import java.lang.reflect.Type;
+import java.util.Iterator;
+import java.util.List;
 
 public class FileReaderSource implements Source<BufferedReader> {
 

@@ -1,9 +1,5 @@
 package com.dsi.parallax.ml.classifier;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.classifier.smoother.Smoother;
 import com.dsi.parallax.ml.classifier.smoother.SmootherType;
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
@@ -13,6 +9,10 @@ import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.EnumOption;
 import com.dsi.parallax.ml.util.option.FloatOption;
 import com.dsi.parallax.ml.util.option.IntegerOption;
+
+import java.util.Arrays;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

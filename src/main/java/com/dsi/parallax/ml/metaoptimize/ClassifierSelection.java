@@ -3,10 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.metaoptimize;
 
-import java.util.Set;
-
-import org.apache.log4j.Logger;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.classifier.Classifiers;
@@ -15,6 +11,9 @@ import com.dsi.parallax.ml.objective.FoldEvaluator;
 import com.dsi.parallax.ml.objective.ObjectiveScorer;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.google.common.collect.Sets;
+import org.apache.log4j.Logger;
+
+import java.util.Set;
 
 /**
  * selects the best Classifier (using default configurations) for input data.

@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
-import java.util.Iterator;
-
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterators;
+
+import java.util.Iterator;
 
 public abstract class AbstractFilteringPipe<O> implements Pipe<O,O> {
 

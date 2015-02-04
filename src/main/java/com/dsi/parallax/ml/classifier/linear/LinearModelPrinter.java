@@ -1,10 +1,10 @@
 package com.dsi.parallax.ml.classifier.linear;
 
+import com.dsi.parallax.ml.vector.LinearVector;
+
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import com.dsi.parallax.ml.vector.LinearVector;
 
 /**
  * utility class for pretty-printing linear models

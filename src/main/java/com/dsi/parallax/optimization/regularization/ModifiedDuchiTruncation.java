@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.optimization.regularization;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 public class ModifiedDuchiTruncation extends AbstractGradientTruncation {
 	private static final long serialVersionUID = 7609740993220832690L;

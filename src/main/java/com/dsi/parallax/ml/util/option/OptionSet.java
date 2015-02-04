@@ -3,17 +3,17 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.util.option;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.util.bounds.Bounds;
+import com.google.common.collect.Iterators;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import com.dsi.parallax.ml.util.bounds.Bounds;
-import com.google.common.collect.Iterators;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * OptionSet creates 3 collection: options,shortNameToOptions and

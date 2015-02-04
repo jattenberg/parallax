@@ -3,18 +3,17 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.evaluation;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import cern.colt.Arrays;
+import com.dsi.parallax.ml.util.MLUtils;
+import com.dsi.parallax.ml.util.pair.FirstDescendingComparator;
+import com.dsi.parallax.ml.util.pair.PrimitivePair;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import cern.colt.Arrays;
-
-import com.dsi.parallax.ml.util.MLUtils;
-import com.dsi.parallax.ml.util.pair.FirstDescendingComparator;
-import com.dsi.parallax.ml.util.pair.PrimitivePair;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * stores a matrix encoding the costs of mistakes

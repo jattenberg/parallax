@@ -30,7 +30,7 @@ import com.dsi.parallax.pipeline.text.TextSanitizerPipe;
 public class TestPCAPipe {
 
 	/** The file. */
-	File file = new File(".classpath");
+	File file = new File("data/spambase.csv");
 
 	/** The bins. */
 	int bins = 100;

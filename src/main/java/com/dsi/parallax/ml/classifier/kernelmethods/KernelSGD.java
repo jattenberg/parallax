@@ -3,10 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.kernelmethods;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.kernelmethods.KernelMethodBuilder.KernelSGDBuilder;
 import com.dsi.parallax.ml.evaluation.LossGradientType;
@@ -17,6 +13,10 @@ import com.dsi.parallax.ml.util.MLUtils;
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Table;
+
+import java.util.Map;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * A kernel-based model capable of optimizing several loss functions using SGD

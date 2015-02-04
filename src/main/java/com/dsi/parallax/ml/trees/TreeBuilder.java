@@ -3,17 +3,17 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Collections;
-import java.util.List;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.projection.Projection;
 import com.dsi.parallax.ml.target.Target;
 import com.dsi.parallax.ml.util.pair.GenericPair;
 import com.google.common.collect.Lists;
+
+import java.util.Collections;
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 
 // TODO: Auto-generated Javadoc

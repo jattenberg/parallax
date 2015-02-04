@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.metaoptimize;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Iterator;
-import java.util.List;
-
 import com.dsi.parallax.ml.util.option.Configurable;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.Option;
 import com.google.common.collect.Lists;
+
+import java.util.Iterator;
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

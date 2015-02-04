@@ -1,14 +1,14 @@
 package com.dsi.parallax.ml.classifier.smoother;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.util.pair.FirstDescendingComparator;
+import com.dsi.parallax.ml.util.pair.PrimitivePair;
+import com.google.common.collect.Lists;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import com.dsi.parallax.ml.util.pair.FirstDescendingComparator;
-import com.dsi.parallax.ml.util.pair.PrimitivePair;
-import com.google.common.collect.Lists;
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

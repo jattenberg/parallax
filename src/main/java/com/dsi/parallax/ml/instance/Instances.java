@@ -3,21 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.instance;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.Vector;
-
 import com.dsi.parallax.ml.projection.Projection;
 import com.dsi.parallax.ml.util.pair.GenericPair;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.google.common.collect.Lists;
+
+import java.io.Serializable;
+import java.util.*;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

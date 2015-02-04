@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.distributions.kde;
 
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.TreeSet;
-
 import com.dsi.parallax.ml.distributions.AbstractUnivariateDistribution;
 import com.dsi.parallax.ml.util.MLUtils;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.PeekingIterator;
 import com.google.common.collect.Sets;
+
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.TreeSet;
 
 // TODO: Auto-generated Javadoc
 /**

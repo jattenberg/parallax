@@ -3,14 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.discretization;
 
-import java.lang.reflect.Type;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.DiscreteDomains;
@@ -18,6 +10,13 @@ import com.google.common.collect.Iterators;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Ranges;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
+
+import java.lang.reflect.Type;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 // TODO: Auto-generated Javadoc
 /**

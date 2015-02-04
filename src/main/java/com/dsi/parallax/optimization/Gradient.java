@@ -28,4 +28,9 @@ public class Gradient extends WeightedGradient {
 	public String toString() {
 		return "loss: " + this.getLoss() + " grad: " + this.getGradientVector();
 	}
+
+    @Override
+    public Gradient copy() {
+        return new Gradient(getGradientVector().copy());
+    }
 }

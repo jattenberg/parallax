@@ -3,16 +3,16 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
+import com.dsi.parallax.ml.util.DefuturingFunction;
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Maps;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import com.dsi.parallax.ml.util.DefuturingFunction;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Maps;
 
 public abstract class AbstractBranchingPipe<I, C, O> implements
 		BranchingPipe<I, C, O> {

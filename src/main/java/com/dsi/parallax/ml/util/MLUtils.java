@@ -3,31 +3,19 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.util;
 
-import static com.google.common.base.Preconditions.checkArgument;
-import static org.apache.commons.math.special.Gamma.logGamma;
+import com.dsi.parallax.ml.vector.LinearVector;
+import org.apache.commons.lang.RandomStringUtils;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.StringTokenizer;
+import java.util.*;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
-import org.apache.commons.lang.RandomStringUtils;
-
-import com.dsi.parallax.ml.vector.LinearVector;
+import static com.google.common.base.Preconditions.checkArgument;
+import static org.apache.commons.math.special.Gamma.logGamma;
 
 public class MLUtils {
 	public static final double LOG2 = Math.log(2);

@@ -3,10 +3,8 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.examples.pipeline;
 
-import java.util.Arrays;
-
-import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
+import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.metaoptimize.Grid;
 import com.dsi.parallax.ml.metaoptimize.GridMetaClassifierOptimizer;
@@ -14,6 +12,8 @@ import com.dsi.parallax.ml.metaoptimize.RandomGridSearch;
 import com.dsi.parallax.ml.objective.AUCObjective;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.pipeline.precompiled.VWtoBinaryInstancesPipeline;
+
+import java.util.Arrays;
 
 /**
  * A simple example where the hyper-parameters of a logistic regression model

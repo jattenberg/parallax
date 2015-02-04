@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.instance;
 
-import java.util.Iterator;
-
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.pipeline.AbstractSink;
 import com.dsi.parallax.pipeline.Context;
+
+import java.util.Iterator;
 
 /**
  * A sink that reads from a pipeline emitting Contexts containing

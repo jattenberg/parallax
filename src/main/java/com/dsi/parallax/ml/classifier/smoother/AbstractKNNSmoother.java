@@ -1,13 +1,13 @@
 package com.dsi.parallax.ml.classifier.smoother;
 
-import java.util.List;
-
 import com.dsi.parallax.ml.util.KDTree;
 import com.dsi.parallax.ml.util.KDTree.Entry;
 import com.dsi.parallax.ml.util.KDTree.SqrEuclid;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
+
+import java.util.List;
 
 import static com.google.common.base.Preconditions.checkArgument;
 

@@ -3,11 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear.optimizable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Collection;
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.AbstractUpdateableClassifier;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.instance.Instance;
@@ -21,6 +16,11 @@ import com.dsi.parallax.optimization.stochastic.GradientStochasticOptimizer;
 import com.dsi.parallax.optimization.stochastic.SGDBuilder;
 import com.dsi.parallax.optimization.stochastic.StochasticGradientOptimizationBuilder;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingScheduleConfigurableBuilder;
+
+import java.util.Collection;
+import java.util.List;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Base class for updateable classifiers that can be trained using the using the

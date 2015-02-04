@@ -1,7 +1,5 @@
 package com.dsi.parallax.ml.examples.debugging;
 
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradienUpdateableQuadraticSVM;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableQuadraticSVMBuilder;
 import com.dsi.parallax.ml.classifier.smoother.SmootherType;
@@ -10,6 +8,8 @@ import com.dsi.parallax.ml.evaluation.ReceiverOperatingCharacteristic;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.utils.IrisReader;
+
+import java.util.Arrays;
 
 public class DuplicateOption {
 	public static void main(String[] args) {

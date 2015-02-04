@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear.updateable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.UpdateableType;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
@@ -15,6 +13,8 @@ import com.dsi.parallax.ml.util.SigmoidType;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.optimization.Gradient;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 
 /**

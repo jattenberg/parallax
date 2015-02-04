@@ -3,17 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.metaoptimize;
 
-import java.util.List;
-
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.util.RandomUtils;
-import com.dsi.parallax.ml.util.option.BooleanOption;
-import com.dsi.parallax.ml.util.option.Configurable;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.EnumOption;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.IntegerOption;
-import com.dsi.parallax.ml.util.option.Option;
+import com.dsi.parallax.ml.util.option.*;
+
+import java.util.List;
 
 // TODO: Auto-generated Javadoc
 /**

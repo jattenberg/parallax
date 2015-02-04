@@ -3,18 +3,17 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.file;
 
-import java.io.File;
-import java.lang.reflect.Type;
-import java.util.Iterator;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.IOFileFilter;
-import org.apache.commons.io.filefilter.TrueFileFilter;
-
 import com.dsi.parallax.pipeline.AbstractExpandingPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Iterators;
 import com.google.gson.reflect.TypeToken;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.IOFileFilter;
+import org.apache.commons.io.filefilter.TrueFileFilter;
+
+import java.io.File;
+import java.lang.reflect.Type;
+import java.util.Iterator;
 
 /**
  * DirectoryToFilesPipe is primitive class for getting contents of File object into context of File

@@ -1,15 +1,15 @@
 package com.dsi.parallax.ml.classifier.lazy;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.classifier.UpdateableClassifierBuilder;
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.EnumOption;
 import com.dsi.parallax.ml.util.option.IntegerOption;
+
+import java.util.Arrays;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 public abstract class AbstractUpdateableKDTreeClassifierBuilder<U extends AbstractUpdateableKDTreeClassifier<U>, B extends UpdateableClassifierBuilder<U, B>>
 		extends UpdateableClassifierBuilder<U, B> {

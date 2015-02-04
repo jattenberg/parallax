@@ -3,13 +3,13 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
+
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Set;
-
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
 
 /**
  * an iterator for branching pipes. idea- store yet-to-be iterated over contexts

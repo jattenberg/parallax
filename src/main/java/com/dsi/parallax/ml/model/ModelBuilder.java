@@ -1,15 +1,11 @@
 package com.dsi.parallax.ml.model;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.target.Target;
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
-import com.dsi.parallax.ml.util.option.AbstractConfigurable;
-import com.dsi.parallax.ml.util.option.BooleanOption;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.IntegerOption;
-import com.dsi.parallax.ml.util.option.OptionSet;
+import com.dsi.parallax.ml.util.option.*;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

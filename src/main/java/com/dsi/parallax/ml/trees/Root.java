@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.Target;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 /**
  * Root node of a decision tree, used to store a map of leaves.

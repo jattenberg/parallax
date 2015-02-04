@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.rules;
 
-import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
-
 import com.dsi.parallax.ml.classifier.AbstractClassifier;
 import com.dsi.parallax.ml.classifier.ClassifierBuilder;
 import com.dsi.parallax.ml.classifier.Classifiers;
@@ -14,6 +12,7 @@ import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.OptionSet;
+import org.apache.commons.math.stat.descriptive.DescriptiveStatistics;
 
 // TODO: Auto-generated Javadoc
 /**

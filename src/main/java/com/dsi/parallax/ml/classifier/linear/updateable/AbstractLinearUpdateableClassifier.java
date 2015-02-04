@@ -3,12 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear.updateable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.AbstractUpdateableClassifier;
 import com.dsi.parallax.ml.classifier.linear.LinearClassifier;
 import com.dsi.parallax.ml.classifier.linear.LinearModelPrinter;
@@ -21,14 +15,16 @@ import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.ml.vector.VectorType;
 import com.dsi.parallax.optimization.Gradient;
-import com.dsi.parallax.optimization.regularization.GradientTruncation;
-import com.dsi.parallax.optimization.regularization.LinearCoefficientLossType;
-import com.dsi.parallax.optimization.regularization.NullTruncation;
-import com.dsi.parallax.optimization.regularization.TruncationConfigurableBuilder;
-import com.dsi.parallax.optimization.regularization.TruncationType;
+import com.dsi.parallax.optimization.regularization.*;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingSchedule;
 import com.dsi.parallax.optimization.stochastic.anneal.ConstantAnnealingSchedule;
 import com.google.common.collect.Maps;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * Base class for all linear updateable classification models. Maintains common

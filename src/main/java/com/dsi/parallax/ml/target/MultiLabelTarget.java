@@ -3,14 +3,13 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.target;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.google.common.base.Joiner;
+import com.google.common.collect.Lists;
+import org.apache.commons.lang.builder.EqualsBuilder;
 
 import java.util.List;
 
-import org.apache.commons.lang.builder.EqualsBuilder;
-
-import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * MultiLabelTarget defines multiple label target

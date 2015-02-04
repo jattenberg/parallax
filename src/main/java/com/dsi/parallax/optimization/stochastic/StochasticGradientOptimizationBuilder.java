@@ -7,21 +7,16 @@ import com.parallax.optimization.stochastic.anneal.AnnealingScheduleConfigurable
  **********************************************************/
 package com.dsi.parallax.optimization.stochastic;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.util.bounds.GreaterThanOrEqualsValueBound;
 import com.dsi.parallax.ml.util.bounds.LessThanOrEqualsValueBound;
-import com.dsi.parallax.ml.util.option.AbstractConfigurable;
-import com.dsi.parallax.ml.util.option.BooleanOption;
-import com.dsi.parallax.ml.util.option.ConfigurableOption;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.OptionSet;
+import com.dsi.parallax.ml.util.option.*;
 import com.dsi.parallax.optimization.regularization.LinearCoefficientLossType;
 import com.dsi.parallax.optimization.regularization.TruncationConfigurableBuilder;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingScheduleConfigurableBuilder;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingScheduleConfigurableOption;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 public abstract class StochasticGradientOptimizationBuilder<O extends StochasticGradientOptimizationBuilder<O>>
 		extends AbstractConfigurable<O> {

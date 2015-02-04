@@ -3,15 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.text;
 
-import java.lang.reflect.Type;
-import java.util.Iterator;
-import java.util.List;
-
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * StringSequenceToSkipGramsPipe is primitive class for getting List contents of String object into context

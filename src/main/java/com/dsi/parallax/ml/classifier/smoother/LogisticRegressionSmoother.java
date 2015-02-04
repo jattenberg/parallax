@@ -1,9 +1,5 @@
 package com.dsi.parallax.ml.classifier.smoother;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Collection;
-
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableLogisticRegression;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
@@ -11,6 +7,10 @@ import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.dsi.parallax.optimization.stochastic.StochasticLBFGSBuilder;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingScheduleConfigurableBuilder;
+
+import java.util.Collection;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * The Class LogisticRegressionSmoother.

@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import java.util.TreeMap;
-
 import com.dsi.parallax.ml.target.Target;
+
+import java.util.TreeMap;
 
 /**
  * represents ordered map of frequencies for each attribute value / target value

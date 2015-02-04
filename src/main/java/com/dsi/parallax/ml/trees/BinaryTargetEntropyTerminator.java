@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.MLUtils;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * a terminator for binary decision trees that is useful for ensuring that there

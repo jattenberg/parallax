@@ -3,8 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection;
 
-import java.util.Collection;
-
+import com.dsi.parallax.ml.instance.Instances;
+import com.dsi.parallax.ml.vector.LinearVector;
+import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import org.apache.commons.lang.time.StopWatch;
 import org.apache.log4j.Logger;
 import org.ejml.alg.dense.decomposition.DecompositionFactory;
@@ -14,9 +15,7 @@ import org.ejml.ops.CommonOps;
 import org.ejml.ops.NormOps;
 import org.ejml.ops.SingularOps;
 
-import com.dsi.parallax.ml.instance.Instances;
-import com.dsi.parallax.ml.vector.LinearVector;
-import com.dsi.parallax.ml.vector.LinearVectorFactory;
+import java.util.Collection;
 
 // TODO: Auto-generated Javadoc
 /**

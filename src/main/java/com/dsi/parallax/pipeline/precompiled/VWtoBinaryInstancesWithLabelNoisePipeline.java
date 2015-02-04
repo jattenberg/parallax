@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.precompiled;
 
-import java.io.File;
-
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.target.BinaryTargetNumericParser;
@@ -17,11 +15,9 @@ import com.dsi.parallax.pipeline.file.FileToLinesPipe;
 import com.dsi.parallax.pipeline.instance.BinaryClassificationInstancesSink;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
 import com.dsi.parallax.pipeline.instance.IntroduceLabelNoisePipe;
-import com.dsi.parallax.pipeline.text.StringSequenceToNumericDictionaryPipe;
-import com.dsi.parallax.pipeline.text.StringToTokenSequencePipe;
-import com.dsi.parallax.pipeline.text.StringToVWPipe;
-import com.dsi.parallax.pipeline.text.TextSanitizerPipe;
-import com.dsi.parallax.pipeline.text.VWtoLabeledStringPipe;
+import com.dsi.parallax.pipeline.text.*;
+
+import java.io.File;
 
 /**
  * A pre-compiled pipeline that reads a file of text-based machine learning

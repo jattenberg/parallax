@@ -3,12 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.optimization;
 
-import org.apache.log4j.Logger;
-
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.ml.vector.util.VectorUtils;
+import org.apache.log4j.Logger;
 
 public class OptimizationUtils {
 	private static Logger logger = Logger.getLogger(OptimizationUtils.class);

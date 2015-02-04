@@ -3,20 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.metaoptimize;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.util.option.*;
+import com.google.common.collect.Maps;
 
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
-import com.dsi.parallax.ml.util.option.Configurable;
-import com.dsi.parallax.ml.util.option.ConfigurableOption;
-import com.dsi.parallax.ml.util.option.Configuration;
-import com.dsi.parallax.ml.util.option.EnumOption;
-import com.dsi.parallax.ml.util.option.FloatOption;
-import com.dsi.parallax.ml.util.option.IntegerOption;
-import com.dsi.parallax.ml.util.option.Option;
-import com.google.common.collect.Maps;
+import static com.google.common.base.Preconditions.checkArgument;
 
 // TODO: Auto-generated Javadoc
 /**

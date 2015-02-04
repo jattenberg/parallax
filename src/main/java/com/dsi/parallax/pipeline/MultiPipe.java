@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
+import com.google.common.collect.Lists;
+import com.google.gson.reflect.TypeToken;
+
 import java.lang.reflect.Type;
 import java.util.Iterator;
 import java.util.List;
-
-import com.google.common.collect.Lists;
-import com.google.gson.reflect.TypeToken;
 
 
 /**

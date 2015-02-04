@@ -3,18 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.evaluation;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.dsi.parallax.ml.util.pair.SecondDescendingComparator;
+
+import java.util.*;
 
 // TODO: Auto-generated Javadoc
 /**

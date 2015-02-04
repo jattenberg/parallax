@@ -3,14 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.util.option;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.util.MLUtils;
-import com.dsi.parallax.ml.util.bounds.Bounds;
-import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
-import com.dsi.parallax.ml.util.bounds.LessThanValueBound;
-import com.dsi.parallax.ml.util.bounds.LowerBound;
-import com.dsi.parallax.ml.util.bounds.UpperBound;
+import com.dsi.parallax.ml.util.bounds.*;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * FloatOption is Float Option

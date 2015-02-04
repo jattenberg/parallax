@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.evaluation;
 
-import static com.google.common.base.Preconditions.checkArgument;
+import com.dsi.parallax.ml.target.BinaryClassificationTarget;
+import com.dsi.parallax.ml.util.pair.PrimitivePair;
 
 import java.util.Collection;
 
-import com.dsi.parallax.ml.target.BinaryClassificationTarget;
-import com.dsi.parallax.ml.util.pair.PrimitivePair;
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * class representing a confusion matrix for representing misclassification

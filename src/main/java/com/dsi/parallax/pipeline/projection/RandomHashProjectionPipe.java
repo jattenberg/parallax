@@ -3,13 +3,13 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.projection;
 
-import java.lang.reflect.Type;
-
 import com.dsi.parallax.ml.projection.HashProjection;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.pipeline.AbstractPipe;
 import com.dsi.parallax.pipeline.Context;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 
 // TODO: Auto-generated Javadoc
 /**

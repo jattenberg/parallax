@@ -3,8 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear.updateable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.WinnowClassifierBuilder;
 import com.dsi.parallax.ml.instance.Instance;
@@ -14,6 +12,8 @@ import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.optimization.Gradient;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingSchedule;
 import com.dsi.parallax.optimization.stochastic.anneal.ConstantAnnealingSchedule;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * a margin Winnow classifier- linear model using multiplicative updates<br>

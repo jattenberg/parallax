@@ -3,10 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.linear.updateable;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
-import java.util.Arrays;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.AROWClassifierBuilder;
 import com.dsi.parallax.ml.instance.Instance;
@@ -17,6 +13,10 @@ import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.dsi.parallax.optimization.Gradient;
 import com.dsi.parallax.optimization.stochastic.anneal.AnnealingSchedule;
 import com.dsi.parallax.optimization.stochastic.anneal.ConstantAnnealingSchedule;
+
+import java.util.Arrays;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * linear classifier implementing Adaptive Regularization of Weight Vectors

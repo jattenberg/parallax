@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.trees;
 
-import java.util.Set;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.Target;
 import com.google.common.collect.Sets;
+
+import java.util.Set;
 
 /**
  * Terminator that halts further splits in a decision tree if only a single

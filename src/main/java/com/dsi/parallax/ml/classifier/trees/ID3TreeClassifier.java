@@ -3,25 +3,15 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.trees;
 
-import java.lang.reflect.InvocationTargetException;
-import java.util.List;
-
-import org.apache.commons.cli.ParseException;
-
 import com.dsi.parallax.ml.classifier.ClassifierEvaluation;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
-import com.dsi.parallax.ml.trees.AttributeValueCache;
-import com.dsi.parallax.ml.trees.BinaryTargetInfoGainSplitCriterion;
-import com.dsi.parallax.ml.trees.ClassifierLeafCreator;
-import com.dsi.parallax.ml.trees.LeafCreator;
-import com.dsi.parallax.ml.trees.OrderedSplitter;
-import com.dsi.parallax.ml.trees.ProjectionFactory;
-import com.dsi.parallax.ml.trees.Pruner;
-import com.dsi.parallax.ml.trees.RecomputingAttributeValueCache;
-import com.dsi.parallax.ml.trees.SplitCriterion;
-import com.dsi.parallax.ml.trees.Splitter;
+import com.dsi.parallax.ml.trees.*;
 import com.dsi.parallax.ml.trees.Terminator;
+import org.apache.commons.cli.ParseException;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.List;
 
 // TODO: Auto-generated Javadoc
 /**

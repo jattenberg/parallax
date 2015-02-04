@@ -3,18 +3,17 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.objective;
 
+import com.dsi.parallax.ml.classifier.Classifier;
+import com.dsi.parallax.ml.classifier.ClassifierBuilder;
+import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
+import com.dsi.parallax.ml.target.BinaryClassificationTarget;
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import org.apache.log4j.Logger;
-
-import com.dsi.parallax.ml.classifier.Classifier;
-import com.dsi.parallax.ml.classifier.ClassifierBuilder;
-import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
-import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 
 // TODO: Auto-generated Javadoc
 /**

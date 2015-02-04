@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.projection;
 
-import java.util.Set;
-
 import com.dsi.parallax.ml.util.MLUtils;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.dsi.parallax.ml.vector.LinearVectorFactory;
 import com.google.common.collect.Sets;
+
+import java.util.Set;
 
 // TODO: Auto-generated Javadoc
 /**

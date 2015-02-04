@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.classifier.smoother;
 
-import java.util.Collection;
-
 import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstance;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
+
+import java.util.Collection;
 
 // TODO: Auto-generated Javadoc
 /**

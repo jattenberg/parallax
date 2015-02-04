@@ -1,11 +1,11 @@
 package com.dsi.parallax.optimization.stochastic.anneal;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import com.dsi.parallax.ml.util.bounds.GreaterThanValueBound;
 import com.dsi.parallax.ml.util.option.Configuration;
 import com.dsi.parallax.ml.util.option.FloatOption;
 import com.dsi.parallax.ml.util.option.OptionSet;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 public class AdaGradAnnealingScheduleBuilder extends AnnealingScheduleBuilder {
 

@@ -3,14 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.instance;
 
-import java.lang.reflect.Type;
-import java.util.Iterator;
-
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
 import com.dsi.parallax.pipeline.Context;
 import com.dsi.parallax.pipeline.Source;
 import com.google.common.collect.Iterators;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.Iterator;
 
 /**
  * A pipeline source that provides BinaryClassificationInstances; can be used to

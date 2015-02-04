@@ -3,12 +3,12 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.dictionary;
 
+import com.dsi.parallax.ml.util.lexer.Lexer;
+import com.dsi.parallax.ml.vector.LinearVector;
+
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Map;
-
-import com.dsi.parallax.ml.util.lexer.Lexer;
-import com.dsi.parallax.ml.vector.LinearVector;
 
 /**
  * Dictionary is interface to define creation method of LinearVector

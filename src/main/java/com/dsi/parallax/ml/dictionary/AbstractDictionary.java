@@ -3,14 +3,14 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.dictionary;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-
 import com.dsi.parallax.ml.util.lexer.Lexer;
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 /**
  * AbstractDictionary is abstract class and implements Dictionary Interface

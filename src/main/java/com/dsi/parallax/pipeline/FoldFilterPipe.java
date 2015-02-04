@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline;
 
-import java.lang.reflect.Type;
-
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 /**
  * passes one in folds instances,
  * indexed by fold < folds

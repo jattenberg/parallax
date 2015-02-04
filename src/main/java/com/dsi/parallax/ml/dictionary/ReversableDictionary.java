@@ -3,9 +3,9 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.dictionary;
 
-import java.util.Collection;
-
 import com.dsi.parallax.ml.vector.LinearVector;
+
+import java.util.Collection;
 
 /**
  * ReversableDictionary is interface to define create Linear Vector and how to get feature

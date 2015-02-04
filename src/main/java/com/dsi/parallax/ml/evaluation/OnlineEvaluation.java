@@ -3,16 +3,16 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.evaluation;
 
-import java.io.Serializable;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.Queue;
-
 import com.dsi.parallax.ml.classifier.Classifier;
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
+
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.Queue;
 
 // TODO: Auto-generated Javadoc
 /**

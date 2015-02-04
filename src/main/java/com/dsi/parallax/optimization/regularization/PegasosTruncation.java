@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.optimization.regularization;
 
-import java.util.Map;
-
 import com.dsi.parallax.ml.vector.LinearVector;
 import com.google.common.collect.Maps;
+
+import java.util.Map;
 
 public class PegasosTruncation extends AbstractGradientTruncation {
 

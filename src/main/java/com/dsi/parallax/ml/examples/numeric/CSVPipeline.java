@@ -3,15 +3,11 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.examples.numeric;
 
-import java.io.File;
-import java.util.Iterator;
-import java.util.Map;
-
 import com.dsi.parallax.ml.classifier.Classifiers;
 import com.dsi.parallax.ml.classifier.UpdateableClassifier;
 import com.dsi.parallax.ml.classifier.linear.updateable.AROWClassifier;
-import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
+import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
 import com.dsi.parallax.ml.target.BinaryTargetNumericParser;
 import com.dsi.parallax.optimization.regularization.TruncationConfigurableBuilder;
@@ -25,6 +21,10 @@ import com.dsi.parallax.pipeline.file.FileToLinesPipe;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
 import com.dsi.parallax.pipeline.text.RegexStringFilterPipe;
 import com.google.common.collect.Maps;
+
+import java.io.File;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * An example for reading numeric data stored in a CSV and sequentially updating

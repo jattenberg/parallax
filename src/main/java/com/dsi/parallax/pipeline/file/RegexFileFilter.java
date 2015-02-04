@@ -3,10 +3,10 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.file;
 
+import org.apache.commons.io.filefilter.IOFileFilter;
+
 import java.io.File;
 import java.util.regex.Pattern;
-
-import org.apache.commons.io.filefilter.IOFileFilter;
 
 /**
  * RegexFileFilter implements IOFileFilter class that filters file base on regular expression of file path and

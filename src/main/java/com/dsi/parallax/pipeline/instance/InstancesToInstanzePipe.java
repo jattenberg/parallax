@@ -3,9 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.pipeline.instance;
 
-import java.lang.reflect.Type;
-import java.util.Iterator;
-
 import com.dsi.parallax.ml.instance.Instance;
 import com.dsi.parallax.ml.instance.Instances;
 import com.dsi.parallax.pipeline.AbstractExpandingPipe;
@@ -13,6 +10,9 @@ import com.dsi.parallax.pipeline.Context;
 import com.google.common.base.Function;
 import com.google.common.collect.Iterators;
 import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.Iterator;
 
 // TODO: Auto-generated Javadoc
 /**

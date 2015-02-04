@@ -3,9 +3,6 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.examples.pipeline;
 
-import java.io.File;
-import java.util.Iterator;
-
 import com.dsi.parallax.ml.classifier.linear.updateable.AROWClassifier;
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
@@ -20,11 +17,10 @@ import com.dsi.parallax.pipeline.classifier.PredictionPipe;
 import com.dsi.parallax.pipeline.classifier.SequentialClassifierTrainingPipe;
 import com.dsi.parallax.pipeline.file.FileToLinesPipe;
 import com.dsi.parallax.pipeline.instance.BinaryInstancesFromVectorPipe;
-import com.dsi.parallax.pipeline.text.StringSequenceToNumericDictionaryPipe;
-import com.dsi.parallax.pipeline.text.StringToTokenSequencePipe;
-import com.dsi.parallax.pipeline.text.StringToVWPipe;
-import com.dsi.parallax.pipeline.text.TextSanitizerPipe;
-import com.dsi.parallax.pipeline.text.VWtoLabeledStringPipe;
+import com.dsi.parallax.pipeline.text.*;
+
+import java.io.File;
+import java.util.Iterator;
 
 // TODO: Auto-generated Javadoc
 /**

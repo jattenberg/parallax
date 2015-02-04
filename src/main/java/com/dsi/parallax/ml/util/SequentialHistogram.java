@@ -3,13 +3,13 @@
  ******************************************************************************/
 package com.dsi.parallax.ml.util;
 
-import java.util.SortedMap;
-import java.util.TreeMap;
-import java.util.TreeSet;
-
 import com.google.common.collect.Iterators;
 import com.google.common.collect.PeekingIterator;
 import com.google.common.collect.Sets;
+
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 /**
  * from BenHaim and Tom-Tov 2010 stores a histogram as a set of pairs consisting

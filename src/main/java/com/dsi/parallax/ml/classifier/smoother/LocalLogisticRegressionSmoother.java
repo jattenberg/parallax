@@ -1,10 +1,11 @@
 package com.dsi.parallax.ml.classifier.smoother;
 
-import java.util.List;
-
 import com.dsi.parallax.ml.util.KDTree.Entry;
 import com.dsi.parallax.ml.util.pair.PrimitivePair;
 import com.google.common.collect.Lists;
+
+import java.util.List;
+
 import static com.google.common.base.Preconditions.checkArgument;
 
 ;

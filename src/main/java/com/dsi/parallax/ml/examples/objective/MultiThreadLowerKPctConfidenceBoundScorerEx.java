@@ -1,7 +1,5 @@
 package com.dsi.parallax.ml.examples.objective;
 
-import java.io.File;
-
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableClassifierBuilder.LogisticRegressionBuilder;
 import com.dsi.parallax.ml.classifier.linear.updateable.LogisticRegression;
 import com.dsi.parallax.ml.instance.BinaryClassificationInstances;
@@ -10,6 +8,8 @@ import com.dsi.parallax.ml.objective.FoldEvaluator;
 import com.dsi.parallax.ml.objective.LowerKPctConfidenceBoundScorer;
 import com.dsi.parallax.ml.target.BinaryClassificationTarget;
 import com.dsi.parallax.pipeline.precompiled.VWtoBinaryInstancesPipeline;
+
+import java.io.File;
 
 public class MultiThreadLowerKPctConfidenceBoundScorerEx {
 
