@@ -2,6 +2,7 @@ package com.dsi.parallax.ml.classifier.linear.optimizable;
 
 import static org.junit.Assert.assertTrue;
 
+import com.dsi.parallax.optimization.stochastic.iResilientPropagationMinusBuilder;
 import org.junit.Test;
 
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableLogisticRegression;
@@ -30,8 +31,12 @@ public class TestGradientUpdateableLogisticRegression {
 			true);
 	StochasticLBFGSBuilder lbfgsBuilder = new StochasticLBFGSBuilder(smallDim,
 			true);
+    iResilientPropagationMinusBuilder rPropBuilder = new iResilientPropagationMinusBuilder(smallDim,
+            true);
 
-	/**
+
+
+    /**
 	 * Test SGD updating.
 	 */
 	@Test
@@ -66,7 +71,7 @@ public class TestGradientUpdateableLogisticRegression {
 
 		bfgsBuilder
 				.setAnnealingScheduleConfigurableBuilder(AnnealingScheduleConfigurableBuilder
-						.configureForConstantRate(0.01));
+                        .configureForConstantRate(0.01));
 		int folds = 3;
 		for (int fold = 0; fold < folds; fold++) {
 
@@ -91,7 +96,7 @@ public class TestGradientUpdateableLogisticRegression {
 
 		lbfgsBuilder
 				.setAnnealingScheduleConfigurableBuilder(AnnealingScheduleConfigurableBuilder
-						.configureForConstantRate(0.01));
+                        .configureForConstantRate(0.01));
 		int folds = 3;
 		for (int fold = 0; fold < folds; fold++) {
 			GradientUpdateableLogisticRegression model = new GradientUpdateableLogisticRegression(
@@ -133,6 +138,28 @@ public class TestGradientUpdateableLogisticRegression {
 			assertTrue(eval.computeAUC() > 0.5);
 		}
 	}
+
+    @Test
+    public void testRprop() {
+        BinaryClassificationInstances insts = IrisReader.readIris().shuffle();
+
+        int folds = 3;
+        for (int fold = 0; fold < folds; fold++) {
+            GradientUpdateableLogisticRegression model = new GradientUpdateableLogisticRegression(
+                    rPropBuilder, smallDim, true);
+            model.setPasses(10);
+            OnlineEvaluation eval = new OnlineEvaluation();
+
+            model.train(insts.getTraining(fold, folds));
+            for (BinaryClassificationInstance x : insts.getTesting(fold, folds)) {
+                double pred = model.predict(x).getValue();
+                double label = x.getLabel().getValue();
+
+                eval.add(label, pred);
+            }
+            assertTrue(eval.computeAUC() > 0.5);
+        }
+    }
 
 	@Test
 	public void testTruncation() {

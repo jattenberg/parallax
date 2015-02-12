@@ -5,6 +5,7 @@ package com.dsi.parallax.ml.classifier.linear.optimizable;
 
 import static org.junit.Assert.assertTrue;
 
+import com.dsi.parallax.optimization.stochastic.iResilientPropagationMinusBuilder;
 import org.junit.Test;
 
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableL2;
@@ -35,8 +36,11 @@ public class TestGradientUpdateableL2 {
 			true);
 	StochasticLBFGSBuilder lbfgsBuilder = new StochasticLBFGSBuilder(smallDim,
 			true);
+    iResilientPropagationMinusBuilder rPropBuilder = new iResilientPropagationMinusBuilder(smallDim,
+            true);
 
-	/**
+
+    /**
 	 * Test.
 	 */
 	@Test
@@ -95,7 +99,7 @@ public class TestGradientUpdateableL2 {
 
 		lbfgsBuilder
 				.setAnnealingScheduleConfigurableBuilder(AnnealingScheduleConfigurableBuilder
-						.configureForConstantRate(0.01));
+                        .configureForConstantRate(0.01));
 		int folds = 3;
 		for (int fold = 0; fold < folds; fold++) {
 			GradientUpdateableL2 model = new GradientUpdateableL2(lbfgsBuilder,
@@ -112,6 +116,27 @@ public class TestGradientUpdateableL2 {
 			assertTrue(eval.computeAUC() > 0.5);
 		}
 	}
+
+    @Test
+    public void testRprop() {
+        BinaryClassificationInstances insts = IrisReader.readIris().shuffle();
+
+        int folds = 3;
+        for (int fold = 0; fold < folds; fold++) {
+            GradientUpdateableL2 model = new GradientUpdateableL2(rPropBuilder,
+                    smallDim, true);
+            OnlineEvaluation eval = new OnlineEvaluation();
+
+            model.train(insts.getTraining(fold, folds));
+            for (BinaryClassificationInstance x : insts.getTesting(fold, folds)) {
+                double pred = model.predict(x).getValue();
+                double label = x.getLabel().getValue();
+
+                eval.add(label, pred);
+            }
+            assertTrue(eval.computeAUC() > 0.5);
+        }
+    }
 
 	@Test
 	public void testTruncation() {

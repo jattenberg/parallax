@@ -18,11 +18,11 @@ import static com.google.common.base.Preconditions.checkArgument;
  */
 public class ResilientPropagation extends AbstractGradientStochasticOptimizer {
 
-    private Gradient lastGrad = null;
-    private double stepGrow;
-    private double stepShrink;
-    private double minStep;
-    private double maxStep;
+    protected Gradient lastGrad = null;
+    protected double stepGrow;
+    protected double stepShrink;
+    protected double minStep;
+    protected double maxStep;
 
     public ResilientPropagation(int dimension, boolean bias, AnnealingSchedule annealingSchedule,
                                 GradientTruncation truncation, Map<LinearCoefficientLossType, Double> coefficientWeights,
@@ -60,7 +60,7 @@ public class ResilientPropagation extends AbstractGradientStochasticOptimizer {
         return rPropUpdate(function, new Gradient(regularizationGradient));
     }
 
-    private Optimizable rPropUpdate(Optimizable function, Gradient gradient) {
+    protected Optimizable rPropUpdate(Optimizable function, Gradient gradient) {
         LinearVector parameter = function.getVector();
 
         checkArgument(

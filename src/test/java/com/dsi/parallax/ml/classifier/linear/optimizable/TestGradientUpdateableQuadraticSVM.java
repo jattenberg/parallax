@@ -2,9 +2,10 @@ package com.dsi.parallax.ml.classifier.linear.optimizable;
 
 import static org.junit.Assert.assertTrue;
 
+import com.dsi.parallax.optimization.stochastic.iResilientPropagationMinusBuilder;
 import org.junit.Test;
 
-import com.dsi.parallax.ml.classifier.linear.optimizable.GradienUpdateableQuadraticSVM;
+import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableQuadraticSVM;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableQuadraticSVMBuilder;
 import com.dsi.parallax.ml.classifier.linear.updateable.LinearUpdateableTestUtils;
 import com.dsi.parallax.ml.evaluation.OnlineEvaluation;
@@ -30,6 +31,8 @@ public class TestGradientUpdateableQuadraticSVM {
 			true);
 	StochasticLBFGSBuilder lbfgsBuilder = new StochasticLBFGSBuilder(smallDim,
 			true);
+    iResilientPropagationMinusBuilder rPropBuilder = new iResilientPropagationMinusBuilder(smallDim,
+            true);
 
 	/**
 	 * Test SGD updating.
@@ -46,7 +49,7 @@ public class TestGradientUpdateableQuadraticSVM {
 						.configureForConstantRate(0.01));
 
 		for (int fold = 0; fold < folds; fold++) {
-			GradienUpdateableQuadraticSVM model = new GradienUpdateableQuadraticSVM(
+			GradientUpdateableQuadraticSVM model = new GradientUpdateableQuadraticSVM(
 					sgdBuilder, dim, true);
 			OnlineEvaluation eval = new OnlineEvaluation();
 
@@ -72,7 +75,7 @@ public class TestGradientUpdateableQuadraticSVM {
 					.setAnnealingScheduleConfigurableBuilder(AnnealingScheduleConfigurableBuilder
 							.configureForConstantRate(0.01));
 			for (int fold = 0; fold < folds; fold++) {
-				GradienUpdateableQuadraticSVM model = new GradienUpdateableQuadraticSVM(
+				GradientUpdateableQuadraticSVM model = new GradientUpdateableQuadraticSVM(
 						sgdBuilder, dim, true).setGamma(gamma);
 				OnlineEvaluation eval = new OnlineEvaluation();
 
@@ -98,7 +101,7 @@ public class TestGradientUpdateableQuadraticSVM {
 		int folds = 3;
 		for (int fold = 0; fold < folds; fold++) {
 
-			GradienUpdateableQuadraticSVM model = new GradienUpdateableQuadraticSVM(
+			GradientUpdateableQuadraticSVM model = new GradientUpdateableQuadraticSVM(
 					bfgsBuilder, smallDim, true);
 			OnlineEvaluation eval = new OnlineEvaluation();
 
@@ -119,10 +122,10 @@ public class TestGradientUpdateableQuadraticSVM {
 
 		lbfgsBuilder
 				.setAnnealingScheduleConfigurableBuilder(AnnealingScheduleConfigurableBuilder
-						.configureForConstantRate(0.01));
+                        .configureForConstantRate(0.01));
 		int folds = 3;
 		for (int fold = 0; fold < folds; fold++) {
-			GradienUpdateableQuadraticSVM model = new GradienUpdateableQuadraticSVM(
+			GradientUpdateableQuadraticSVM model = new GradientUpdateableQuadraticSVM(
 					lbfgsBuilder, smallDim, true);
 			OnlineEvaluation eval = new OnlineEvaluation();
 
@@ -136,6 +139,27 @@ public class TestGradientUpdateableQuadraticSVM {
 			assertTrue(eval.computeAUC() > 0.5);
 		}
 	}
+
+    @Test
+    public void testRprop() {
+        BinaryClassificationInstances insts = IrisReader.readIris().shuffle();
+
+        int folds = 3;
+        for (int fold = 0; fold < folds; fold++) {
+            GradientUpdateableQuadraticSVM model = new GradientUpdateableQuadraticSVM(
+                    rPropBuilder, smallDim, true);
+            OnlineEvaluation eval = new OnlineEvaluation();
+
+            model.train(insts.getTraining(fold, folds));
+            for (BinaryClassificationInstance x : insts.getTesting(fold, folds)) {
+                double pred = model.predict(x).getValue();
+                double label = x.getLabel().getValue();
+
+                eval.add(label, pred);
+            }
+            assertTrue(eval.computeAUC() > 0.5);
+        }
+    }
 
 	@Test
 	public void testTruncation() {

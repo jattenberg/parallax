@@ -1,7 +1,8 @@
 package com.dsi.parallax.ml.examples.debugging;
 
-import com.dsi.parallax.ml.classifier.linear.optimizable.GradienUpdateableQuadraticSVM;
+import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableQuadraticSVM;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableQuadraticSVMBuilder;
+import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableQuadraticSVM;
 import com.dsi.parallax.ml.classifier.smoother.SmootherType;
 import com.dsi.parallax.ml.evaluation.ConfusionMatrix;
 import com.dsi.parallax.ml.evaluation.ReceiverOperatingCharacteristic;
@@ -44,8 +45,8 @@ public class DuplicateOption {
 					folds);
 
 			// Initializing the classifier function
-			GradienUpdateableQuadraticSVM model = builder.build();
-			// model = (GradienUpdateableQuadraticSVM)builder.build();
+			GradientUpdateableQuadraticSVM model = builder.build();
+			// model = (GradientUpdateableQuadraticSVM)builder.build();
 
 			// Training of the model
 			model.train(training);

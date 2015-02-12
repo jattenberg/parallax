@@ -15,7 +15,7 @@ import com.dsi.parallax.ml.classifier.lazy.LocalLogisticRegression;
 import com.dsi.parallax.ml.classifier.lazy.LocalLogisticRegressionBuilder;
 import com.dsi.parallax.ml.classifier.lazy.SequentialKNN;
 import com.dsi.parallax.ml.classifier.lazy.SequentialKNNBuilder;
-import com.dsi.parallax.ml.classifier.linear.optimizable.GradienUpdateableQuadraticSVM;
+import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableQuadraticSVM;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableL2Builder;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableLogisticRegressionBuilder;
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableClassifierConfigurableBuilder.GradientUpdateableModifiedHuberBuilder;
@@ -625,12 +625,12 @@ public enum Classifiers {
 
 		@Override
 		public Class<?> getClassifierClass() {
-			return GradienUpdateableQuadraticSVM.class;
+			return GradientUpdateableQuadraticSVM.class;
 		}
 
 		@Override
 		public Classifier<?> getClassifier(int dimension, boolean bias) {
-			return new GradienUpdateableQuadraticSVM(dimension, bias);
+			return new GradientUpdateableQuadraticSVM(dimension, bias);
 		}
 
 		@Override

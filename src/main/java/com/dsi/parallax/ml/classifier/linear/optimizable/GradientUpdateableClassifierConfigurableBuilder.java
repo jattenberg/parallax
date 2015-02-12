@@ -373,7 +373,7 @@ public abstract class GradientUpdateableClassifierConfigurableBuilder<C extends 
 	 */
 	public static class GradientUpdateableQuadraticSVMBuilder
 			extends
-			GradientUpdateableClassifierConfigurableBuilder<GradienUpdateableQuadraticSVM, GradientUpdateableQuadraticSVMBuilder> {
+			GradientUpdateableClassifierConfigurableBuilder<GradientUpdateableQuadraticSVM, GradientUpdateableQuadraticSVMBuilder> {
 
 		/** The Constant serialVersionUID. */
 		private static final long serialVersionUID = 6818228602046314281L;
@@ -422,8 +422,8 @@ public abstract class GradientUpdateableClassifierConfigurableBuilder<C extends 
 		 * @see com.parallax.ml.model.ModelBuilder#build()
 		 */
 		@Override
-		public GradienUpdateableQuadraticSVM build() {
-			GradienUpdateableQuadraticSVM model = new GradienUpdateableQuadraticSVM(
+		public GradientUpdateableQuadraticSVM build() {
+			GradientUpdateableQuadraticSVM model = new GradientUpdateableQuadraticSVM(
 					initializeGradientBuilder().setGradientTruncationBuilder(
 							truncationBuilder), getDimension(), bias);
 			model.setGamma(gamma)
@@ -515,7 +515,7 @@ public abstract class GradientUpdateableClassifierConfigurableBuilder<C extends 
 		 */
 		protected static class GradientUpdateableQuadraticSVMOptions
 				extends
-				GradientUpdateableOptions<GradienUpdateableQuadraticSVM, GradientUpdateableQuadraticSVMBuilder> {
+				GradientUpdateableOptions<GradientUpdateableQuadraticSVM, GradientUpdateableQuadraticSVMBuilder> {
 			{
 				addOption(new FloatOption(
 						"G",

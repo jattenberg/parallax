@@ -2,6 +2,7 @@ package com.dsi.parallax.ml.classifier.linear.optimizable;
 
 import static org.junit.Assert.assertTrue;
 
+import com.dsi.parallax.optimization.stochastic.iResilientPropagationMinusBuilder;
 import org.junit.Test;
 
 import com.dsi.parallax.ml.classifier.linear.optimizable.GradientUpdateableModifiedHuber;
@@ -30,8 +31,11 @@ public class TestGradientUpdateableModifiedHuber {
 			true);
 	StochasticLBFGSBuilder lbfgsBuilder = new StochasticLBFGSBuilder(smallDim,
 			true);
+    iResilientPropagationMinusBuilder rPropBuilder = new iResilientPropagationMinusBuilder(smallDim,
+            true);
 
-	/**
+
+    /**
 	 * Test SGD updating.
 	 */
 	@Test
@@ -108,6 +112,27 @@ public class TestGradientUpdateableModifiedHuber {
 			assertTrue(eval.computeAUC() > 0.5);
 		}
 	}
+
+    @Test
+    public void testRprop() {
+        BinaryClassificationInstances insts = IrisReader.readIris().shuffle();
+
+        int folds = 3;
+        for (int fold = 0; fold < folds; fold++) {
+            GradientUpdateableModifiedHuber model = new GradientUpdateableModifiedHuber(
+                    rPropBuilder, smallDim, true);
+            OnlineEvaluation eval = new OnlineEvaluation();
+
+            model.train(insts.getTraining(fold, folds));
+            for (BinaryClassificationInstance x : insts.getTesting(fold, folds)) {
+                double pred = model.predict(x).getValue();
+                double label = x.getLabel().getValue();
+
+                eval.add(label, pred);
+            }
+            assertTrue(eval.computeAUC() > 0.5);
+        }
+    }
 
 	@Test
 	public void testTruncation() {
